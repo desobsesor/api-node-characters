@@ -22,5 +22,5 @@ Location.init(
     {
         sequelize,
         modelName: 'Location',
-    },
+    }
 );

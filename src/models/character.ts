@@ -15,7 +15,7 @@ export interface ICharacter {
     episode: string;
     url: string;
     created: string;
-}
+};
 
 export class Character extends Model { }
 

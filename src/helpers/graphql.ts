@@ -40,7 +40,7 @@ export const typeDefs = gql`
 
 export const resolvers = {
   Query: {
-    characters: async (_, { status, species, gender, name, origin }) => {
+    characters: async (_: any, { status, species, gender, name, origin }: any) => {
       Character.belongsTo(Origin, { foreignKey: "origin" });
       Origin.hasMany(Character, { foreignKey: "origin" })
       Character.belongsTo(Location, { foreignKey: "location" });

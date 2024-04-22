@@ -2,7 +2,7 @@ import log4js from 'log4js';
 
 const logger = log4js.getLogger('default');
 
-export const autenticacion = (req, res, next) => {
+export const autenticacion = (req: any, res: any, next: any) => {
     const token = req.headers['authorization'];
     logger.info('Validando autorización!');
 

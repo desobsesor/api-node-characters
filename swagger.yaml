@@ -80,7 +80,7 @@ paths:
                   error:
                     type: string
                     description: Error message.
-  /allcharacters:
+  /character/all:
     get:
       summary: Get All Characters
       description: Retrieves a list of all characters.
@@ -215,7 +215,7 @@ paths:
                     type: string
                     description: Error message
 
-  /characters/id:
+  /character/id:
     put:
       summary: Update character information
       description: Updates an existing character in the database.

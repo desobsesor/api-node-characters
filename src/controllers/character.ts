@@ -6,7 +6,7 @@ import { Character } from '../models/character';
 import NodeCache from 'node-cache';
 import { Origin } from '../models/origin';
 import { Location } from '../models/location';
-import { getAllCharactersByRickAndMorty } from '../services/character';
+import { getAllCharactersByRickAndMorty, getAllCharactersByRickAndMortyGraphQl } from '../services/character';
 
 const cache = new NodeCache({ stdTTL: 3600 });
 
@@ -19,32 +19,31 @@ const redisClient = createClient();
     await redisClient.connect();
 })();
 
-export const getSearhByCharacters = async (req, res) => {
+export const getSearhByCharacters = async (req: any, res: any) => {
     try {
-        const { status, species, gender, name, origin } = req.query;
+        const { status, species, gender, name, origin } = req.body;
 
         const cacheKey = `character?status=${status}&species=${species}&gender=${gender}&name=${name}&origin=${origin}`;
 
         const cachedData = await redisClient.get(cacheKey);
         if (cachedData) { 
             logger.info('Getting characters data from cache');
-            return res.json(JSON.parse(cachedData));
+            return res.status(201).json(JSON.parse(cachedData));
         }
 
-        const response = await getAllCharactersByRickAndMorty( status, species, gender, name, origin );
+        const response = await getAllCharactersByRickAndMortyGraphQl( status, species, gender, name, origin );
 
         const cacheValue = JSON.stringify(response.data.results);
         await redisClient.set(cacheKey, cacheValue, { EX: cacheTTL }); 
 
         res.status(201).json(response.data.results);
     } catch (error) {
-        
-        logger.error('No se ha proporcionado un token de acceso', { statusCode: 401});
+        logger.error('Error when querying characters', { statusCode: 500});
         res.status(500).json({ error: 'Error when querying characters' });
     }
 };
 
-export const getAllCharacters = async (req, res) => {
+export const getAllCharacters = async (req: any, res: any) => {
     try {
         Character.belongsTo(Origin, { foreignKey: "origin" });
         Origin.hasMany(Character, { foreignKey: "origin" })
@@ -62,7 +61,7 @@ export const getAllCharacters = async (req, res) => {
     }
 };
 
-export const getCharacterById = async (req, res) => {
+export const getCharacterById = async (req: any, res: any) => {
     const { id } = req.body;
     try {
         const character = await Character.findByPk(id);
@@ -74,7 +73,7 @@ export const getCharacterById = async (req, res) => {
     }
 };
 
-export const getCharacterByName = async (req, res) => {
+export const getCharacterByName = async (req: any, res: any) => {
     const { name } = req.body;
     try {
         const character = await Character.findOne({
@@ -88,7 +87,7 @@ export const getCharacterByName = async (req, res) => {
     }
 };
 
-export const setCharacter = async (req, res) => {
+export const setCharacter = async (req: any, res: any) => {
     const { status, species, gender, name, origin, location, image, episode, url, created } = req.body;
 
     try {
@@ -109,7 +108,7 @@ export const setCharacter = async (req, res) => {
     }
 };
 
-export const updateCharacter = async (req, res) => {
+export const updateCharacter = async (req: any, res: any) => {
 
     const { id, status, species, gender, name, origin, location, image, episode, url } = req.body;
     const redisChannel = 'register_changes';
@@ -139,7 +138,7 @@ export const updateCharacter = async (req, res) => {
     }
 };
 
-export const deleteCharacterById = async (req, res) => {
+export const deleteCharacterById = async (req: any, res: any) => {
     const redisChannel = 'register_deletes';
     const id = req.params.id;
     try {
