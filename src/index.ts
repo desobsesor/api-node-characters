@@ -6,14 +6,14 @@ import { createCronJob } from './utils/cronJob';
 import { loggerMiddleware } from './middlewares/loggerMiddleware';
 
 // CronJob
-const myCronJob = createCronJob('* * 12 * * *'); // Example cron expression for every 12 hours
+const myCronJob = createCronJob('10 * * * * *'); // Example cron expression for every 12 hours
 myCronJob.start();
 
 // Logger
 import './helpers/loggers';
 import { resolvers, typeDefs } from './helpers/graphql';
 
-const app = express();
+const app: any = express();
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -33,7 +33,7 @@ app.use('/', require('./helpers/jsonwebtoken'));
 app.use('/', require('./routes/character'));
 app.use('/', require('./routes/swagger'));
 
-app.get('/', (req, res) => {
+app.get('/', (req: any, res: any) => {
   res.send('API for search service with cache!');
 });
 

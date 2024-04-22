@@ -1,10 +1,10 @@
 
 import { performance } from 'perf_hooks';
 
-export const logMethodExecutionTime = (target, propertyKey, descriptor) => {
+export const logMethodExecutionTime = (target: any, propertyKey: any, descriptor: any) => {
   const originalMethod = descriptor.value;
 
-  descriptor.value = async (...args) => {
+  descriptor.value = async (...args: any) => {
     const startTime = performance.now();
     const result = await originalMethod.apply(target, args);
     const endTime = performance.now();

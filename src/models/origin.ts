@@ -22,5 +22,5 @@ Origin.init(
     {
         sequelize,
         modelName: 'Origin',
-    },
+    }
 );
