@@ -215,7 +215,7 @@ paths:
                     type: string
                     description: Error message
 
-  /characters/{id}:
+  /characters/id:
     put:
       summary: Update character information
       description: Updates an existing character in the database.
@@ -286,31 +286,29 @@ paths:
                         type: string
                         description: The character's status (e.g., alive, dead, unknown)
                       species:
-                        type
-                        species:
-                  type: string
-                  description: The character's species
-                gender:
-                  type: string
-                  description: The character's gender (e.g., male, female, unknown)
-                name:
-                  type: string
-                  description: The character's name
-                origin:
-                  type: string
-                  description: The character's origin (location or planet)
-                location:
-                  type: string
-                  description: The character's current location (optional)
-                image:
-                  type: string
-                  description: URL of the character's image (optional)
-                episode:
-                  type: array
-                  description: Array of episode URLs where the character appears (optional)
-                url:
-                  type: string
-                  description: URL of the character's API endpoint (optional)
+                        type: string
+                        description: The character's species
+                      gender:
+                        type: string
+                        description: The character's gender (e.g., male, female, unknown)
+                      name:
+                        type: string
+                        description: The character's name
+                      origin:
+                        type: string
+                        description: The character's origin (location or planet)
+                      location:
+                        type: string
+                        description: The character's current location (optional)
+                      image:
+                        type: string
+                        description: URL of the character's image (optional)
+                      episode:
+                        type: array
+                        description: Array of episode URLs where the character appears (optional)
+                      url:
+                        type: string
+                        description: URL of the character's API endpoint (optional)
         '500':
           description: Internal server error
           content:
