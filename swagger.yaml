@@ -1,0 +1,424 @@
+
+swagger: '2.0'
+info:
+  title: Character API
+  version: 1.0.0
+  description: API for managing characters
+
+paths:
+  /graphql:
+    post:
+      summary: Get Characters
+      description: Retrieves a list of characters based on optional filters with graphql.
+      tags:
+        - Characters
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: The name of the data entry.
+                value:
+                  type: string
+                  description: The string value of the data entry.
+      responses:
+        '200':
+          description: Successful retrieval of characters.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      characters:
+                        type: array
+                        items:
+                          $ref: '#/components/schemas/Character'
+                  errors:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        message:
+                          type: string
+                        locations:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              line:
+                                type: integer
+                              column:
+                                type: integer
+                        path:
+                          type: array
+                          items:
+                            type: string
+        '400':
+          description: Bad request.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message.
+        '500':
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message.
+  /allcharacters:
+    get:
+      summary: Get All Characters
+      description: Retrieves a list of all characters.
+      tags:
+        - allcharacters
+      responses:
+        '200':
+          description: Successful retrieval of all characters.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Character'
+        '500':
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message.
+                    paths:
+  /characters/{id}:
+    get:
+      summary: Get character by ID
+      description: Retrieves a character based on the provided ID.
+      parameters:
+        - in: path
+          name: id
+          description: The unique identifier of the character
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful retrieval of character
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  # Replace with your character model properties
+                  # (e.g., name, status, species, etc.)
+                  id:
+                    type: integer
+                    description: The character's ID
+                  name:
+                    type: string
+                    description: The character's name
+                  # ... add other properties
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message
+                    paths:
+  /characters:
+    post:
+      summary: Create a new character
+      description: Creates a new character in the database.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  description: The character's status (e.g., alive, dead, unknown)
+                species:
+                  type: string
+                  description: The character's species
+                gender:
+                  type: string
+                  description: The character's gender (e.g., male, female, unknown)
+                name:
+                  type: string
+                  description: The character's name
+                origin:
+                  type: string
+                  description: The character's origin (location or planet)
+                location:
+                  type: string
+                  description: The character's current location (optional)
+                image:
+                  type: string
+                  description: URL of the character's image (optional)
+                episode:
+                  type: array
+                  description: Array of episode URLs where the character appears (optional)
+                url:
+                  type: string
+                  description: URL of the character's API endpoint (optional)
+                created:
+                  type: string
+                  description: The date the character was created (optional)
+      responses:
+        '201':
+          description: Character created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                    description: Indicates success (true)
+                  status:
+                    type: integer
+                    description: HTTP status code (201)
+                  message:
+                    type: string
+                    description: Success message
+                  # Optionally include the created character details here
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message
+
+  /characters/{id}:
+    put:
+      summary: Update character information
+      description: Updates an existing character in the database.
+      parameters:
+        - in: path
+          name: id
+          description: The unique identifier of the character to update
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              # Same properties as /characters POST request body
+              properties:
+                status:
+                  type: string
+                  description: The character's status (e.g., alive, dead, unknown)
+                species:
+                  type: string
+                  description: The character's species
+                gender:
+                  type: string
+                  description: The character's gender (e.g., male, female, unknown)
+                name:
+                  type: string
+                  description: The character's name
+                origin:
+                  type: string
+                  description: The character's origin (location or planet)
+                location:
+                  type: string
+                  description: The character's current location (optional)
+                image:
+                  type: string
+                  description: URL of the character's image (optional)
+                episode:
+                  type: array
+                  description: Array of episode URLs where the character appears (optional)
+                url:
+                  type: string
+                  description: URL of the character's API endpoint (optional)
+      responses:
+        '201':
+          description: Character information updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                    description: Indicates success (true)
+                  status:
+                    type: integer
+                    description: HTTP status code (201)
+                  message:
+                    type: string
+                    description: Success message
+                  characterUpdate:  # Include details of the updated character
+                    type: object
+                    # Same properties as /characters POST request body
+                    properties:
+                      status:
+                        type: string
+                        description: The character's status (e.g., alive, dead, unknown)
+                      species:
+                        type
+                        species:
+                  type: string
+                  description: The character's species
+                gender:
+                  type: string
+                  description: The character's gender (e.g., male, female, unknown)
+                name:
+                  type: string
+                  description: The character's name
+                origin:
+                  type: string
+                  description: The character's origin (location or planet)
+                location:
+                  type: string
+                  description: The character's current location (optional)
+                image:
+                  type: string
+                  description: URL of the character's image (optional)
+                episode:
+                  type: array
+                  description: Array of episode URLs where the character appears (optional)
+                url:
+                  type: string
+                  description: URL of the character's API endpoint (optional)
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message
+
+    delete:
+      summary: Delete a character by ID
+      description: Deletes a character from the database based on the provided ID.
+      parameters:
+        - in: path
+          name: id
+          description: The unique identifier of the character to delete
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Character deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                    description: Indicates success (true)
+                  status:
+                    type: integer
+                    description: HTTP status code (204 - No Content)
+                  message:
+                    type: string
+                    description: Success message
+                  character:  # Include details of the deleted character (optional)
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        description: The character's ID
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message
+
+components:
+  schemas:
+    Character:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: The unique identifier of the character.
+        name:
+          type: string
+          description: The name of the character.
+        status:
+          type: string
+          description: The status of the character (e.g., "Alive", "Dead", "Unknown").
+        species:
+          type: string
+          description: The species of the character.
+        gender:
+          type: string
+          description: The gender of the character.
+        image:
+          type: string
+          description: The URL of the character's image.
+        episode:
+          type: array
+          description: A list of URLs for episodes in which the character appears.
+          items:
+            type: string
+        url:
+          type: string
+          description: The URL for the character API resource.
+        created:
+          type: string
+          description: The date and time the character was created.
+        origin:
+          $ref: '#/components/schemas/Origin'
+        location:
+          $ref: '#/components/schemas/Location'
+    Origin:
+      type: object
+      properties:
+        name:
+          type: string
+          description: The name of the character's origin.
+        url:
+          type: string
+          description: The URL for the origin API resource.
+    Location:
+      type: object
+      properties:
+        name:
+          type: string
+          description: The name of the character's location.
+        url:
+          type: string
+          description: The URL for the location API resource.

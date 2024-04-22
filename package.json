@@ -1,0 +1,58 @@
+{
+  "name": "api-node-characters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && node ./build/index.js",
+    "start-dev": "npm run compile && node ./build/index.js",
+    "test": "jest"
+  },
+  "author": "Yovany Suárez Silva",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "keywords": [
+    "sistema",
+    "APLICACIONES DE SOFTWARE",
+    "..."
+  ],
+  "maintainers": [
+    "Yovany Suárez Silva"
+  ],
+  "directories": {
+    "test": "tests"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.10.3",
+    "apollo-server-express": "^3.13.0",
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "cron": "^3.1.7",
+    "express": "^4.19.1",
+    "fs": "^0.0.1-security",
+    "graphql": "^16.8.1",
+    "graphql-playground-middleware-express": "^1.7.23",
+    "jsonwebtoken": "^9.0.2",
+    "log4js": "^6.9.1",
+    "mysql2": "^3.9.6",
+    "node-cache": "^5.1.2",
+    "redis": "^4.6.13",
+    "redis-mock": "^0.56.3",
+    "sequelize": "^6.37.3",
+    "swagger-parser": "^10.0.3",
+    "swagger-ui-express": "^5.0.0",
+    "yaml": "^2.4.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "jest": "^29.7.0",
+    "tslint": "^5.20.1",
+    "typescript": "^5.4.5"
+  }
+}
