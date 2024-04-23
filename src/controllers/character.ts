@@ -62,7 +62,7 @@ export const getAllCharacters = async (req: any, res: any) => {
 };
 
 export const getCharacterById = async (req: any, res: any) => {
-    const { id } = req.body;
+    const { id } = req.params;
     try {
         const character = await Character.findByPk(id);
         res.status(200).json(character);
@@ -74,10 +74,10 @@ export const getCharacterById = async (req: any, res: any) => {
 };
 
 export const getCharacterByName = async (req: any, res: any) => {
-    const { name } = req.body;
+    const { name } = req.params;
     try {
         const character = await Character.findOne({
-            where: name,
+            where: { name },
         });
         res.status(200).json(character);
     } catch (error) {
@@ -110,7 +110,8 @@ export const setCharacter = async (req: any, res: any) => {
 
 export const updateCharacter = async (req: any, res: any) => {
 
-    const { id, status, species, gender, name, origin, location, image, episode, url } = req.body;
+    const { id } = req.params;
+    const { status, species, gender, name, origin, location, image, episode, url } = req.body;
     const redisChannel = 'register_changes';
 
     try {

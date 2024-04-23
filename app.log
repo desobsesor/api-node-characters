@@ -3216,3 +3216,608 @@
 [2024-04-22T14:20:10.021] [INFO] default - Body: {}
 [2024-04-22T14:21:10.013] [INFO] default - [2024-04-22T19:21:10.013Z] GET /character/all
 [2024-04-22T14:21:10.014] [INFO] default - Body: {}
+[2024-04-22T19:58:01.633] [INFO] default - [2024-04-23T00:58:01.633Z] GET /
+[2024-04-22T19:58:01.635] [INFO] default - Body: {}
+[2024-04-22T19:58:01.854] [INFO] default - [2024-04-23T00:58:01.854Z] GET /favicon.ico
+[2024-04-22T19:58:01.870] [INFO] default - Body: {}
+[2024-04-22T19:58:10.043] [INFO] default - [2024-04-23T00:58:10.043Z] GET /character/all
+[2024-04-22T19:58:10.044] [INFO] default - Body: {}
+[2024-04-22T19:59:10.017] [INFO] default - [2024-04-23T00:59:10.017Z] GET /character/all
+[2024-04-22T19:59:10.018] [INFO] default - Body: {}
+[2024-04-22T20:00:10.027] [INFO] default - [2024-04-23T01:00:10.026Z] GET /character/all
+[2024-04-22T20:00:10.027] [INFO] default - Body: {}
+[2024-04-22T20:01:10.013] [INFO] default - [2024-04-23T01:01:10.013Z] GET /character/all
+[2024-04-22T20:01:10.013] [INFO] default - Body: {}
+[2024-04-22T20:05:50.629] [INFO] default - [2024-04-23T01:05:50.629Z] GET /
+[2024-04-22T20:05:50.631] [INFO] default - Body: {}
+[2024-04-22T20:06:10.020] [INFO] default - [2024-04-23T01:06:10.020Z] GET /character/all
+[2024-04-22T20:06:10.021] [INFO] default - Body: {}
+[2024-04-22T20:06:18.797] [INFO] default - [2024-04-23T01:06:18.797Z] GET /api-docs
+[2024-04-22T20:06:18.798] [INFO] default - Body: {}
+[2024-04-22T20:06:18.809] [INFO] default - [2024-04-23T01:06:18.809Z] GET /api-docs/
+[2024-04-22T20:06:18.809] [INFO] default - Body: {}
+[2024-04-22T20:06:18.858] [INFO] default - [2024-04-23T01:06:18.857Z] GET /api-docs/swagger-ui.css
+[2024-04-22T20:06:18.858] [INFO] default - Body: {}
+[2024-04-22T20:06:18.860] [INFO] default - [2024-04-23T01:06:18.859Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T20:06:18.860] [INFO] default - Body: {}
+[2024-04-22T20:06:18.864] [INFO] default - [2024-04-23T01:06:18.864Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T20:06:18.865] [INFO] default - Body: {}
+[2024-04-22T20:06:18.871] [INFO] default - [2024-04-23T01:06:18.871Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T20:06:18.871] [INFO] default - Body: {}
+[2024-04-22T20:06:19.397] [INFO] default - [2024-04-23T01:06:19.397Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T20:06:19.397] [INFO] default - Body: {}
+[2024-04-22T20:07:10.028] [INFO] default - [2024-04-23T01:07:10.027Z] GET /character/all
+[2024-04-22T20:07:10.028] [INFO] default - Body: {}
+[2024-04-22T20:08:10.013] [INFO] default - [2024-04-23T01:08:10.013Z] GET /character/all
+[2024-04-22T20:08:10.014] [INFO] default - Body: {}
+[2024-04-22T20:09:10.020] [INFO] default - [2024-04-23T01:09:10.020Z] GET /character/all
+[2024-04-22T20:09:10.020] [INFO] default - Body: {}
+[2024-04-22T20:10:10.021] [INFO] default - [2024-04-23T01:10:10.021Z] GET /character/all
+[2024-04-22T20:10:10.021] [INFO] default - Body: {}
+[2024-04-22T20:11:10.019] [INFO] default - [2024-04-23T01:11:10.019Z] GET /character/all
+[2024-04-22T20:11:10.020] [INFO] default - Body: {}
+[2024-04-22T20:12:10.025] [INFO] default - [2024-04-23T01:12:10.025Z] GET /character/all
+[2024-04-22T20:12:10.026] [INFO] default - Body: {}
+[2024-04-22T20:13:10.020] [INFO] default - [2024-04-23T01:13:10.020Z] GET /character/all
+[2024-04-22T20:13:10.021] [INFO] default - Body: {}
+[2024-04-22T20:14:10.022] [INFO] default - [2024-04-23T01:14:10.022Z] GET /character/all
+[2024-04-22T20:14:10.022] [INFO] default - Body: {}
+[2024-04-22T20:15:10.014] [INFO] default - [2024-04-23T01:15:10.014Z] GET /character/all
+[2024-04-22T20:15:10.015] [INFO] default - Body: {}
+[2024-04-22T20:16:10.013] [INFO] default - [2024-04-23T01:16:10.013Z] GET /character/all
+[2024-04-22T20:16:10.014] [INFO] default - Body: {}
+[2024-04-22T20:17:10.020] [INFO] default - [2024-04-23T01:17:10.020Z] GET /character/all
+[2024-04-22T20:17:10.021] [INFO] default - Body: {}
+[2024-04-22T20:18:10.011] [INFO] default - [2024-04-23T01:18:10.011Z] GET /character/all
+[2024-04-22T20:18:10.012] [INFO] default - Body: {}
+[2024-04-22T20:19:10.010] [INFO] default - [2024-04-23T01:19:10.010Z] GET /character/all
+[2024-04-22T20:19:10.010] [INFO] default - Body: {}
+[2024-04-22T20:20:10.022] [INFO] default - [2024-04-23T01:20:10.022Z] GET /character/all
+[2024-04-22T20:20:10.022] [INFO] default - Body: {}
+[2024-04-22T20:21:10.010] [INFO] default - [2024-04-23T01:21:10.009Z] GET /character/all
+[2024-04-22T20:21:10.010] [INFO] default - Body: {}
+[2024-04-22T20:22:10.011] [INFO] default - [2024-04-23T01:22:10.011Z] GET /character/all
+[2024-04-22T20:22:10.011] [INFO] default - Body: {}
+[2024-04-22T20:23:10.024] [INFO] default - [2024-04-23T01:23:10.024Z] GET /character/all
+[2024-04-22T20:23:10.025] [INFO] default - Body: {}
+[2024-04-22T20:24:10.016] [INFO] default - [2024-04-23T01:24:10.016Z] GET /character/all
+[2024-04-22T20:24:10.016] [INFO] default - Body: {}
+[2024-04-22T20:25:10.013] [INFO] default - [2024-04-23T01:25:10.013Z] GET /character/all
+[2024-04-22T20:25:10.013] [INFO] default - Body: {}
+[2024-04-22T20:26:10.011] [INFO] default - [2024-04-23T01:26:10.011Z] GET /character/all
+[2024-04-22T20:26:10.012] [INFO] default - Body: {}
+[2024-04-22T20:27:10.019] [INFO] default - [2024-04-23T01:27:10.019Z] GET /character/all
+[2024-04-22T20:27:10.020] [INFO] default - Body: {}
+[2024-04-22T20:28:10.015] [INFO] default - [2024-04-23T01:28:10.015Z] GET /character/all
+[2024-04-22T20:28:10.015] [INFO] default - Body: {}
+[2024-04-22T20:29:10.018] [INFO] default - [2024-04-23T01:29:10.018Z] GET /character/all
+[2024-04-22T20:29:10.019] [INFO] default - Body: {}
+[2024-04-22T20:30:10.023] [INFO] default - [2024-04-23T01:30:10.023Z] GET /character/all
+[2024-04-22T20:30:10.024] [INFO] default - Body: {}
+[2024-04-22T20:31:10.017] [INFO] default - [2024-04-23T01:31:10.017Z] GET /character/all
+[2024-04-22T20:31:10.017] [INFO] default - Body: {}
+[2024-04-22T20:32:10.010] [INFO] default - [2024-04-23T01:32:10.010Z] GET /character/all
+[2024-04-22T20:32:10.010] [INFO] default - Body: {}
+[2024-04-22T20:33:10.024] [INFO] default - [2024-04-23T01:33:10.024Z] GET /character/all
+[2024-04-22T20:33:10.025] [INFO] default - Body: {}
+[2024-04-22T20:34:10.022] [INFO] default - [2024-04-23T01:34:10.022Z] GET /character/all
+[2024-04-22T20:34:10.023] [INFO] default - Body: {}
+[2024-04-22T20:35:10.015] [INFO] default - [2024-04-23T01:35:10.015Z] GET /character/all
+[2024-04-22T20:35:10.016] [INFO] default - Body: {}
+[2024-04-22T20:36:10.020] [INFO] default - [2024-04-23T01:36:10.020Z] GET /character/all
+[2024-04-22T20:36:10.020] [INFO] default - Body: {}
+[2024-04-22T20:37:10.016] [INFO] default - [2024-04-23T01:37:10.016Z] GET /character/all
+[2024-04-22T20:37:10.030] [INFO] default - Body: {}
+[2024-04-22T20:38:10.019] [INFO] default - [2024-04-23T01:38:10.019Z] GET /character/all
+[2024-04-22T20:38:10.019] [INFO] default - Body: {}
+[2024-04-22T20:52:46.855] [INFO] default - [2024-04-23T01:52:46.855Z] GET /character/all
+[2024-04-22T20:52:46.857] [INFO] default - Body: {}
+[2024-04-22T20:53:10.105] [INFO] default - [2024-04-23T01:53:10.105Z] GET /character/all
+[2024-04-22T20:53:10.124] [INFO] default - Body: {}
+[2024-04-22T20:54:10.019] [INFO] default - [2024-04-23T01:54:10.019Z] GET /character/all
+[2024-04-22T20:54:10.019] [INFO] default - Body: {}
+[2024-04-22T20:55:10.023] [INFO] default - [2024-04-23T01:55:10.023Z] GET /character/all
+[2024-04-22T20:55:10.023] [INFO] default - Body: {}
+[2024-04-22T20:56:27.697] [INFO] default - [2024-04-23T01:56:27.696Z] GET /api-docs/
+[2024-04-22T20:56:27.699] [INFO] default - Body: {}
+[2024-04-22T20:56:27.746] [INFO] default - [2024-04-23T01:56:27.746Z] GET /api-docs/swagger-ui.css
+[2024-04-22T20:56:27.753] [INFO] default - Body: {}
+[2024-04-22T20:56:27.755] [INFO] default - [2024-04-23T01:56:27.755Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T20:56:27.756] [INFO] default - Body: {}
+[2024-04-22T20:56:27.761] [INFO] default - [2024-04-23T01:56:27.761Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T20:56:27.762] [INFO] default - Body: {}
+[2024-04-22T20:56:27.766] [INFO] default - [2024-04-23T01:56:27.765Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T20:56:27.767] [INFO] default - Body: {}
+[2024-04-22T20:56:27.974] [INFO] default - [2024-04-23T01:56:27.974Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T20:56:27.974] [INFO] default - Body: {}
+[2024-04-22T20:57:10.019] [INFO] default - [2024-04-23T01:57:10.019Z] GET /character/all
+[2024-04-22T20:57:10.020] [INFO] default - Body: {}
+[2024-04-22T20:58:22.670] [INFO] default - [2024-04-23T01:58:22.669Z] GET /api-docs/
+[2024-04-22T20:58:22.671] [INFO] default - Body: {}
+[2024-04-22T20:58:22.728] [INFO] default - [2024-04-23T01:58:22.728Z] GET /api-docs/swagger-ui.css
+[2024-04-22T20:58:22.729] [INFO] default - Body: {}
+[2024-04-22T20:58:22.730] [INFO] default - [2024-04-23T01:58:22.730Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T20:58:22.731] [INFO] default - Body: {}
+[2024-04-22T20:58:22.736] [INFO] default - [2024-04-23T01:58:22.736Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T20:58:22.736] [INFO] default - Body: {}
+[2024-04-22T20:58:22.737] [INFO] default - [2024-04-23T01:58:22.737Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T20:58:22.738] [INFO] default - Body: {}
+[2024-04-22T20:58:23.033] [INFO] default - [2024-04-23T01:58:23.033Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T20:58:23.034] [INFO] default - Body: {}
+[2024-04-22T20:59:10.015] [INFO] default - [2024-04-23T01:59:10.015Z] GET /character/all
+[2024-04-22T20:59:10.015] [INFO] default - Body: {}
+[2024-04-22T21:00:10.022] [INFO] default - [2024-04-23T02:00:10.022Z] GET /character/all
+[2024-04-22T21:00:10.023] [INFO] default - Body: {}
+[2024-04-22T21:01:10.025] [INFO] default - [2024-04-23T02:01:10.025Z] GET /character/all
+[2024-04-22T21:01:10.026] [INFO] default - Body: {}
+[2024-04-22T21:02:10.014] [INFO] default - [2024-04-23T02:02:10.014Z] GET /character/all
+[2024-04-22T21:02:10.015] [INFO] default - Body: {}
+[2024-04-22T21:03:10.015] [INFO] default - [2024-04-23T02:03:10.015Z] GET /character/all
+[2024-04-22T21:03:10.015] [INFO] default - Body: {}
+[2024-04-22T21:06:37.556] [INFO] default - [2024-04-23T02:06:37.555Z] GET /api-docs/
+[2024-04-22T21:06:37.559] [INFO] default - Body: {}
+[2024-04-22T21:06:37.609] [INFO] default - [2024-04-23T02:06:37.609Z] GET /api-docs/swagger-ui.css
+[2024-04-22T21:06:37.610] [INFO] default - Body: {}
+[2024-04-22T21:06:37.613] [INFO] default - [2024-04-23T02:06:37.613Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T21:06:37.614] [INFO] default - Body: {}
+[2024-04-22T21:06:37.616] [INFO] default - [2024-04-23T02:06:37.616Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T21:06:37.617] [INFO] default - Body: {}
+[2024-04-22T21:06:37.618] [INFO] default - [2024-04-23T02:06:37.618Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T21:06:37.619] [INFO] default - Body: {}
+[2024-04-22T21:06:37.860] [INFO] default - [2024-04-23T02:06:37.860Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T21:06:37.861] [INFO] default - Body: {}
+[2024-04-22T21:07:10.030] [INFO] default - [2024-04-23T02:07:10.030Z] GET /character/all
+[2024-04-22T21:07:10.030] [INFO] default - Body: {}
+[2024-04-22T21:07:31.073] [INFO] default - [2024-04-23T02:07:31.072Z] GET /api-docs/
+[2024-04-22T21:07:31.074] [INFO] default - Body: {}
+[2024-04-22T21:07:31.131] [INFO] default - [2024-04-23T02:07:31.131Z] GET /api-docs/swagger-ui.css
+[2024-04-22T21:07:31.132] [INFO] default - Body: {}
+[2024-04-22T21:07:31.134] [INFO] default - [2024-04-23T02:07:31.134Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T21:07:31.134] [INFO] default - Body: {}
+[2024-04-22T21:07:31.139] [INFO] default - [2024-04-23T02:07:31.138Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T21:07:31.139] [INFO] default - Body: {}
+[2024-04-22T21:07:31.142] [INFO] default - [2024-04-23T02:07:31.142Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T21:07:31.144] [INFO] default - Body: {}
+[2024-04-22T21:07:31.349] [INFO] default - [2024-04-23T02:07:31.349Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T21:07:31.350] [INFO] default - Body: {}
+[2024-04-22T21:08:10.803] [INFO] default - [2024-04-23T02:08:10.802Z] GET /character/all
+[2024-04-22T21:08:10.804] [INFO] default - Body: {}
+[2024-04-22T21:10:10.034] [INFO] default - [2024-04-23T02:10:10.034Z] GET /character/all
+[2024-04-22T21:10:10.036] [INFO] default - Body: {}
+[2024-04-22T21:11:10.018] [INFO] default - [2024-04-23T02:11:10.018Z] GET /character/all
+[2024-04-22T21:11:10.019] [INFO] default - Body: {}
+[2024-04-22T21:12:10.012] [INFO] default - [2024-04-23T02:12:10.012Z] GET /character/all
+[2024-04-22T21:12:10.013] [INFO] default - Body: {}
+[2024-04-22T21:13:10.017] [INFO] default - [2024-04-23T02:13:10.017Z] GET /character/all
+[2024-04-22T21:13:10.017] [INFO] default - Body: {}
+[2024-04-22T21:14:10.020] [INFO] default - [2024-04-23T02:14:10.020Z] GET /character/all
+[2024-04-22T21:14:10.021] [INFO] default - Body: {}
+[2024-04-22T21:15:10.018] [INFO] default - [2024-04-23T02:15:10.018Z] GET /character/all
+[2024-04-22T21:15:10.018] [INFO] default - Body: {}
+[2024-04-22T21:16:10.021] [INFO] default - [2024-04-23T02:16:10.021Z] GET /character/all
+[2024-04-22T21:16:10.022] [INFO] default - Body: {}
+[2024-04-22T21:17:10.024] [INFO] default - [2024-04-23T02:17:10.024Z] GET /character/all
+[2024-04-22T21:17:10.024] [INFO] default - Body: {}
+[2024-04-22T21:17:53.350] [INFO] default - [2024-04-23T02:17:53.350Z] GET /api-docs/
+[2024-04-22T21:17:53.350] [INFO] default - Body: {}
+[2024-04-22T21:17:53.387] [INFO] default - [2024-04-23T02:17:53.387Z] GET /api-docs/swagger-ui.css
+[2024-04-22T21:17:53.388] [INFO] default - Body: {}
+[2024-04-22T21:17:53.389] [INFO] default - [2024-04-23T02:17:53.389Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T21:17:53.390] [INFO] default - Body: {}
+[2024-04-22T21:17:53.391] [INFO] default - [2024-04-23T02:17:53.391Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T21:17:53.392] [INFO] default - Body: {}
+[2024-04-22T21:17:53.393] [INFO] default - [2024-04-23T02:17:53.393Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T21:17:53.393] [INFO] default - Body: {}
+[2024-04-22T21:17:53.533] [INFO] default - [2024-04-23T02:17:53.533Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T21:17:53.533] [INFO] default - Body: {}
+[2024-04-22T21:18:10.015] [INFO] default - [2024-04-23T02:18:10.015Z] GET /character/all
+[2024-04-22T21:18:10.016] [INFO] default - Body: {}
+[2024-04-22T21:18:12.417] [INFO] default - [2024-04-23T02:18:12.417Z] GET /character/1
+[2024-04-22T21:18:12.418] [INFO] default - Body: {}
+[2024-04-22T21:19:10.015] [INFO] default - [2024-04-23T02:19:10.015Z] GET /character/all
+[2024-04-22T21:19:10.016] [INFO] default - Body: {}
+[2024-04-22T21:20:09.937] [INFO] default - [2024-04-23T02:20:09.936Z] GET /api-docs/
+[2024-04-22T21:20:09.938] [INFO] default - Body: {}
+[2024-04-22T21:20:09.987] [INFO] default - [2024-04-23T02:20:09.987Z] GET /api-docs/swagger-ui.css
+[2024-04-22T21:20:09.988] [INFO] default - Body: {}
+[2024-04-22T21:20:09.996] [INFO] default - [2024-04-23T02:20:09.996Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T21:20:09.997] [INFO] default - Body: {}
+[2024-04-22T21:20:10.000] [INFO] default - [2024-04-23T02:20:10.000Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T21:20:10.001] [INFO] default - Body: {}
+[2024-04-22T21:20:10.002] [INFO] default - [2024-04-23T02:20:10.002Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T21:20:10.003] [INFO] default - Body: {}
+[2024-04-22T21:20:10.022] [INFO] default - [2024-04-23T02:20:10.022Z] GET /character/all
+[2024-04-22T21:20:10.023] [INFO] default - Body: {}
+[2024-04-22T21:20:10.413] [INFO] default - [2024-04-23T02:20:10.413Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T21:20:10.413] [INFO] default - Body: {}
+[2024-04-22T21:20:17.604] [INFO] default - [2024-04-23T02:20:17.604Z] GET /api-docs/
+[2024-04-22T21:20:17.605] [INFO] default - Body: {}
+[2024-04-22T21:20:17.651] [INFO] default - [2024-04-23T02:20:17.651Z] GET /api-docs/swagger-ui.css
+[2024-04-22T21:20:17.651] [INFO] default - Body: {}
+[2024-04-22T21:20:17.653] [INFO] default - [2024-04-23T02:20:17.653Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T21:20:17.653] [INFO] default - Body: {}
+[2024-04-22T21:20:17.657] [INFO] default - [2024-04-23T02:20:17.657Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T21:20:17.658] [INFO] default - Body: {}
+[2024-04-22T21:20:17.659] [INFO] default - [2024-04-23T02:20:17.659Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T21:20:17.660] [INFO] default - Body: {}
+[2024-04-22T21:20:17.816] [INFO] default - [2024-04-23T02:20:17.816Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T21:20:17.816] [INFO] default - Body: {}
+[2024-04-22T21:20:25.647] [INFO] default - [2024-04-23T02:20:25.647Z] GET /character/1
+[2024-04-22T21:20:25.647] [INFO] default - Body: {}
+[2024-04-22T21:21:10.014] [INFO] default - [2024-04-23T02:21:10.014Z] GET /character/all
+[2024-04-22T21:21:10.014] [INFO] default - Body: {}
+[2024-04-22T21:22:10.016] [INFO] default - [2024-04-23T02:22:10.016Z] GET /character/all
+[2024-04-22T21:22:10.016] [INFO] default - Body: {}
+[2024-04-22T21:23:10.012] [INFO] default - [2024-04-23T02:23:10.012Z] GET /character/all
+[2024-04-22T21:23:10.012] [INFO] default - Body: {}
+[2024-04-22T21:24:10.021] [INFO] default - [2024-04-23T02:24:10.021Z] GET /character/all
+[2024-04-22T21:24:10.021] [INFO] default - Body: {}
+[2024-04-22T21:25:10.113] [INFO] default - [2024-04-23T02:25:10.113Z] GET /character/all
+[2024-04-22T21:25:10.113] [INFO] default - Body: {}
+[2024-04-22T21:26:10.017] [INFO] default - [2024-04-23T02:26:10.017Z] GET /character/all
+[2024-04-22T21:26:10.017] [INFO] default - Body: {}
+[2024-04-22T21:27:10.026] [INFO] default - [2024-04-23T02:27:10.025Z] GET /character/all
+[2024-04-22T21:27:10.028] [INFO] default - Body: {}
+[2024-04-22T21:28:10.022] [INFO] default - [2024-04-23T02:28:10.022Z] GET /character/all
+[2024-04-22T21:28:10.023] [INFO] default - Body: {}
+[2024-04-22T21:29:10.025] [INFO] default - [2024-04-23T02:29:10.025Z] GET /character/all
+[2024-04-22T21:29:10.027] [INFO] default - Body: {}
+[2024-04-22T21:30:10.022] [INFO] default - [2024-04-23T02:30:10.022Z] GET /character/all
+[2024-04-22T21:30:10.033] [INFO] default - Body: {}
+[2024-04-22T21:31:10.020] [INFO] default - [2024-04-23T02:31:10.020Z] GET /character/all
+[2024-04-22T21:31:10.020] [INFO] default - Body: {}
+[2024-04-22T21:32:10.025] [INFO] default - [2024-04-23T02:32:10.025Z] GET /character/all
+[2024-04-22T21:32:10.025] [INFO] default - Body: {}
+[2024-04-22T21:33:10.011] [INFO] default - [2024-04-23T02:33:10.010Z] GET /character/all
+[2024-04-22T21:33:10.011] [INFO] default - Body: {}
+[2024-04-22T21:34:10.026] [INFO] default - [2024-04-23T02:34:10.026Z] GET /character/all
+[2024-04-22T21:34:10.026] [INFO] default - Body: {}
+[2024-04-22T21:35:10.019] [INFO] default - [2024-04-23T02:35:10.019Z] GET /character/all
+[2024-04-22T21:35:10.020] [INFO] default - Body: {}
+[2024-04-22T21:35:59.748] [INFO] default - [2024-04-23T02:35:59.748Z] GET /api-docs/
+[2024-04-22T21:35:59.748] [INFO] default - Body: {}
+[2024-04-22T21:35:59.804] [INFO] default - [2024-04-23T02:35:59.804Z] GET /api-docs/swagger-ui.css
+[2024-04-22T21:35:59.805] [INFO] default - Body: {}
+[2024-04-22T21:35:59.806] [INFO] default - [2024-04-23T02:35:59.806Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T21:35:59.807] [INFO] default - Body: {}
+[2024-04-22T21:35:59.810] [INFO] default - [2024-04-23T02:35:59.810Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T21:35:59.810] [INFO] default - Body: {}
+[2024-04-22T21:35:59.811] [INFO] default - [2024-04-23T02:35:59.811Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T21:35:59.811] [INFO] default - Body: {}
+[2024-04-22T21:36:00.014] [INFO] default - [2024-04-23T02:36:00.014Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T21:36:00.015] [INFO] default - Body: {}
+[2024-04-22T21:36:10.009] [INFO] default - [2024-04-23T02:36:10.009Z] GET /character/all
+[2024-04-22T21:36:10.010] [INFO] default - Body: {}
+[2024-04-22T21:36:11.046] [INFO] default - [2024-04-23T02:36:11.046Z] GET /character/Paty
+[2024-04-22T21:36:11.046] [INFO] default - Body: {}
+[2024-04-22T21:36:44.817] [INFO] default - [2024-04-23T02:36:44.817Z] GET /character/Pato
+[2024-04-22T21:36:44.818] [INFO] default - Body: {}
+[2024-04-22T21:36:49.869] [INFO] default - [2024-04-23T02:36:49.869Z] GET /character/Pato
+[2024-04-22T21:36:49.870] [INFO] default - Body: {}
+[2024-04-22T21:36:56.132] [INFO] default - [2024-04-23T02:36:56.132Z] GET /character/Pato
+[2024-04-22T21:36:56.133] [INFO] default - Body: {}
+[2024-04-22T21:37:10.020] [INFO] default - [2024-04-23T02:37:10.020Z] GET /character/all
+[2024-04-22T21:37:10.034] [INFO] default - Body: {}
+[2024-04-22T21:38:10.014] [INFO] default - [2024-04-23T02:38:10.014Z] GET /character/all
+[2024-04-22T21:38:10.014] [INFO] default - Body: {}
+[2024-04-22T21:39:35.911] [INFO] default - [2024-04-23T02:39:35.910Z] GET /api-docs/
+[2024-04-22T21:39:35.916] [INFO] default - Body: {}
+[2024-04-22T21:39:35.970] [INFO] default - [2024-04-23T02:39:35.970Z] GET /api-docs/swagger-ui.css
+[2024-04-22T21:39:35.971] [INFO] default - Body: {}
+[2024-04-22T21:39:35.973] [INFO] default - [2024-04-23T02:39:35.973Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T21:39:35.974] [INFO] default - Body: {}
+[2024-04-22T21:39:35.980] [INFO] default - [2024-04-23T02:39:35.980Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T21:39:35.980] [INFO] default - Body: {}
+[2024-04-22T21:39:35.981] [INFO] default - [2024-04-23T02:39:35.981Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T21:39:35.982] [INFO] default - Body: {}
+[2024-04-22T21:39:36.194] [INFO] default - [2024-04-23T02:39:36.194Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T21:39:36.195] [INFO] default - Body: {}
+[2024-04-22T21:39:49.254] [INFO] default - [2024-04-23T02:39:49.254Z] GET /character/Pato
+[2024-04-22T21:39:49.255] [INFO] default - Body: {}
+[2024-04-22T21:40:10.025] [INFO] default - [2024-04-23T02:40:10.025Z] GET /character/all
+[2024-04-22T21:40:10.025] [INFO] default - Body: {}
+[2024-04-22T21:41:10.016] [INFO] default - [2024-04-23T02:41:10.016Z] GET /character/all
+[2024-04-22T21:41:10.016] [INFO] default - Body: {}
+[2024-04-22T21:42:01.142] [INFO] default - [2024-04-23T02:42:01.141Z] POST /character/search
+[2024-04-22T21:42:01.144] [INFO] default - Body: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}
+[2024-04-22T21:42:01.149] [INFO] default - [2024-04-23T02:42:01.149Z] POST /character/search
+[2024-04-22T21:42:01.150] [INFO] default - Body: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}
+[2024-04-22T21:42:01.172] [INFO] default - Getting characters data from cache
+[2024-04-22T21:42:01.182] [INFO] default - Getting characters data from cache
+[2024-04-22T21:42:10.021] [INFO] default - [2024-04-23T02:42:10.021Z] GET /character/all
+[2024-04-22T21:42:10.022] [INFO] default - Body: {}
+[2024-04-22T21:43:10.013] [INFO] default - [2024-04-23T02:43:10.013Z] GET /character/all
+[2024-04-22T21:43:10.013] [INFO] default - Body: {}
+[2024-04-22T21:44:10.025] [INFO] default - [2024-04-23T02:44:10.025Z] GET /character/all
+[2024-04-22T21:44:10.025] [INFO] default - Body: {}
+[2024-04-22T21:44:15.607] [INFO] default - [2024-04-23T02:44:15.607Z] GET /character/id/1
+[2024-04-22T21:44:15.608] [INFO] default - Body: {}
+[2024-04-22T21:44:33.579] [INFO] default - [2024-04-23T02:44:33.578Z] GET /character/name/Pato
+[2024-04-22T21:44:33.579] [INFO] default - Body: {}
+[2024-04-22T21:44:33.581] [ERROR] default - Error when searching character by Name { statusCode: 500 }
+[2024-04-22T21:45:10.014] [INFO] default - [2024-04-23T02:45:10.014Z] GET /character/all
+[2024-04-22T21:45:10.017] [INFO] default - Body: {}
+[2024-04-22T21:45:12.083] [INFO] default - [2024-04-23T02:45:12.083Z] GET /character/name/Pato
+[2024-04-22T21:45:12.084] [INFO] default - Body: {}
+[2024-04-22T21:45:12.086] [ERROR] default - Error when searching character by Name { statusCode: 500 }
+[2024-04-22T21:46:10.018] [INFO] default - [2024-04-23T02:46:10.018Z] GET /character/all
+[2024-04-22T21:46:10.018] [INFO] default - Body: {}
+[2024-04-22T21:46:45.924] [INFO] default - [2024-04-23T02:46:45.924Z] GET /character/name/Pato?name=Pato
+[2024-04-22T21:46:45.924] [INFO] default - Body: {}
+[2024-04-22T21:46:45.926] [ERROR] default - Error when searching character by Name { statusCode: 500 }
+[2024-04-22T21:46:52.685] [INFO] default - [2024-04-23T02:46:52.685Z] GET /character/name/?name=Pato
+[2024-04-22T21:46:52.686] [INFO] default - Body: {}
+[2024-04-22T21:47:00.872] [INFO] default - [2024-04-23T02:47:00.872Z] GET /character/name/Pato
+[2024-04-22T21:47:00.873] [INFO] default - Body: {}
+[2024-04-22T21:47:00.877] [ERROR] default - Error when searching character by Name { statusCode: 500 }
+[2024-04-22T21:47:10.043] [INFO] default - [2024-04-23T02:47:10.043Z] GET /character/all
+[2024-04-22T21:47:10.044] [INFO] default - Body: {}
+[2024-04-22T21:47:57.366] [INFO] default - [2024-04-23T02:47:57.365Z] GET /character/name/Pato
+[2024-04-22T21:47:57.367] [INFO] default - Body: {}
+[2024-04-22T21:47:57.375] [ERROR] default - Error when searching character by Name { statusCode: 500 }
+[2024-04-22T21:48:10.028] [INFO] default - [2024-04-23T02:48:10.027Z] GET /character/all
+[2024-04-22T21:48:10.029] [INFO] default - Body: {}
+[2024-04-22T21:49:10.014] [INFO] default - [2024-04-23T02:49:10.014Z] GET /character/all
+[2024-04-22T21:49:10.015] [INFO] default - Body: {}
+[2024-04-22T21:50:10.017] [INFO] default - [2024-04-23T02:50:10.017Z] GET /character/all
+[2024-04-22T21:50:10.018] [INFO] default - Body: {}
+[2024-04-22T21:51:05.441] [INFO] default - [2024-04-23T02:51:05.441Z] GET /character/name/Pato
+[2024-04-22T21:51:05.446] [INFO] default - Body: {}
+[2024-04-22T21:51:10.027] [INFO] default - [2024-04-23T02:51:10.027Z] GET /character/all
+[2024-04-22T21:51:10.028] [INFO] default - Body: {}
+[2024-04-22T21:51:20.980] [INFO] default - [2024-04-23T02:51:20.980Z] GET /character/Pato
+[2024-04-22T21:51:20.981] [INFO] default - Body: {}
+[2024-04-22T21:51:24.770] [INFO] default - [2024-04-23T02:51:24.770Z] GET /api-docs/
+[2024-04-22T21:51:24.771] [INFO] default - Body: {}
+[2024-04-22T21:51:24.822] [INFO] default - [2024-04-23T02:51:24.822Z] GET /api-docs/swagger-ui.css
+[2024-04-22T21:51:24.823] [INFO] default - Body: {}
+[2024-04-22T21:51:24.827] [INFO] default - [2024-04-23T02:51:24.827Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T21:51:24.827] [INFO] default - Body: {}
+[2024-04-22T21:51:24.830] [INFO] default - [2024-04-23T02:51:24.830Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T21:51:24.832] [INFO] default - Body: {}
+[2024-04-22T21:51:24.834] [INFO] default - [2024-04-23T02:51:24.834Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T21:51:24.834] [INFO] default - Body: {}
+[2024-04-22T21:51:25.151] [INFO] default - [2024-04-23T02:51:25.151Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T21:51:25.152] [INFO] default - Body: {}
+[2024-04-22T21:51:37.123] [INFO] default - [2024-04-23T02:51:37.123Z] GET /character/name/Pato
+[2024-04-22T21:51:37.124] [INFO] default - Body: {}
+[2024-04-22T21:52:10.022] [INFO] default - [2024-04-23T02:52:10.022Z] GET /character/all
+[2024-04-22T21:52:10.022] [INFO] default - Body: {}
+[2024-04-22T21:53:10.013] [INFO] default - [2024-04-23T02:53:10.013Z] GET /character/all
+[2024-04-22T21:53:10.013] [INFO] default - Body: {}
+[2024-04-22T21:53:44.144] [INFO] default - [2024-04-23T02:53:44.144Z] POST /graphql
+[2024-04-22T21:53:44.145] [INFO] default - Body: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}
+[2024-04-22T21:53:44.183] [INFO] default - [2024-04-23T02:53:44.182Z] POST /graphql
+[2024-04-22T21:53:44.184] [INFO] default - Body: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}
+[2024-04-22T21:53:57.488] [INFO] default - [2024-04-23T02:53:57.487Z] GET /character/id/1
+[2024-04-22T21:53:57.489] [INFO] default - Body: {}
+[2024-04-22T21:54:10.020] [INFO] default - [2024-04-23T02:54:10.020Z] GET /character/all
+[2024-04-22T21:54:10.021] [INFO] default - Body: {}
+[2024-04-22T21:55:10.011] [INFO] default - [2024-04-23T02:55:10.010Z] GET /character/all
+[2024-04-22T21:55:10.011] [INFO] default - Body: {}
+[2024-04-22T21:56:10.016] [INFO] default - [2024-04-23T02:56:10.016Z] GET /character/all
+[2024-04-22T21:56:10.017] [INFO] default - Body: {}
+[2024-04-22T21:57:10.021] [INFO] default - [2024-04-23T02:57:10.021Z] GET /character/all
+[2024-04-22T21:57:10.021] [INFO] default - Body: {}
+[2024-04-22T21:58:10.022] [INFO] default - [2024-04-23T02:58:10.022Z] GET /character/all
+[2024-04-22T21:58:10.022] [INFO] default - Body: {}
+[2024-04-22T21:59:10.024] [INFO] default - [2024-04-23T02:59:10.024Z] GET /character/all
+[2024-04-22T21:59:10.025] [INFO] default - Body: {}
+[2024-04-22T21:59:45.991] [INFO] default - [2024-04-23T02:59:45.990Z] GET /api-docs/
+[2024-04-22T21:59:45.993] [INFO] default - Body: {}
+[2024-04-22T21:59:46.043] [INFO] default - [2024-04-23T02:59:46.043Z] GET /api-docs/swagger-ui.css
+[2024-04-22T21:59:46.043] [INFO] default - Body: {}
+[2024-04-22T21:59:46.047] [INFO] default - [2024-04-23T02:59:46.047Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T21:59:46.049] [INFO] default - Body: {}
+[2024-04-22T21:59:46.051] [INFO] default - [2024-04-23T02:59:46.051Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T21:59:46.051] [INFO] default - Body: {}
+[2024-04-22T21:59:46.056] [INFO] default - [2024-04-23T02:59:46.056Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T21:59:46.057] [INFO] default - Body: {}
+[2024-04-22T21:59:46.413] [INFO] default - [2024-04-23T02:59:46.413Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T21:59:46.414] [INFO] default - Body: {}
+[2024-04-22T22:00:10.027] [INFO] default - [2024-04-23T03:00:10.027Z] GET /character/all
+[2024-04-22T22:00:10.027] [INFO] default - Body: {}
+[2024-04-22T22:01:10.017] [INFO] default - [2024-04-23T03:01:10.017Z] GET /character/all
+[2024-04-22T22:01:10.017] [INFO] default - Body: {}
+[2024-04-22T22:02:10.019] [INFO] default - [2024-04-23T03:02:10.019Z] GET /character/all
+[2024-04-22T22:02:10.020] [INFO] default - Body: {}
+[2024-04-22T22:03:10.016] [INFO] default - [2024-04-23T03:03:10.016Z] GET /character/all
+[2024-04-22T22:03:10.017] [INFO] default - Body: {}
+[2024-04-22T22:04:09.761] [INFO] default - [2024-04-23T03:04:09.760Z] GET /api-docs/
+[2024-04-22T22:04:09.763] [INFO] default - Body: {}
+[2024-04-22T22:04:09.817] [INFO] default - [2024-04-23T03:04:09.817Z] GET /api-docs/swagger-ui.css
+[2024-04-22T22:04:09.834] [INFO] default - Body: {}
+[2024-04-22T22:04:09.835] [INFO] default - [2024-04-23T03:04:09.835Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T22:04:09.836] [INFO] default - Body: {}
+[2024-04-22T22:04:09.840] [INFO] default - [2024-04-23T03:04:09.840Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T22:04:09.841] [INFO] default - Body: {}
+[2024-04-22T22:04:09.842] [INFO] default - [2024-04-23T03:04:09.842Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T22:04:09.842] [INFO] default - Body: {}
+[2024-04-22T22:04:10.045] [INFO] default - [2024-04-23T03:04:10.045Z] GET /character/all
+[2024-04-22T22:04:10.046] [INFO] default - Body: {}
+[2024-04-22T22:04:10.217] [INFO] default - [2024-04-23T03:04:10.217Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T22:04:10.218] [INFO] default - Body: {}
+[2024-04-22T22:05:10.015] [INFO] default - [2024-04-23T03:05:10.015Z] GET /character/all
+[2024-04-22T22:05:10.016] [INFO] default - Body: {}
+[2024-04-22T22:06:10.025] [INFO] default - [2024-04-23T03:06:10.025Z] GET /character/all
+[2024-04-22T22:06:10.026] [INFO] default - Body: {}
+[2024-04-22T22:07:10.018] [INFO] default - [2024-04-23T03:07:10.018Z] GET /character/all
+[2024-04-22T22:07:10.019] [INFO] default - Body: {}
+[2024-04-22T22:08:10.022] [INFO] default - [2024-04-23T03:08:10.022Z] GET /character/all
+[2024-04-22T22:08:10.023] [INFO] default - Body: {}
+[2024-04-22T22:09:10.022] [INFO] default - [2024-04-23T03:09:10.022Z] GET /character/all
+[2024-04-22T22:09:10.022] [INFO] default - Body: {}
+[2024-04-22T22:10:10.022] [INFO] default - [2024-04-23T03:10:10.021Z] GET /character/all
+[2024-04-22T22:10:10.022] [INFO] default - Body: {}
+[2024-04-22T22:11:10.024] [INFO] default - [2024-04-23T03:11:10.024Z] GET /character/all
+[2024-04-22T22:11:10.025] [INFO] default - Body: {}
+[2024-04-22T22:12:10.028] [INFO] default - [2024-04-23T03:12:10.027Z] GET /character/all
+[2024-04-22T22:12:10.030] [INFO] default - Body: {}
+[2024-04-22T22:13:10.020] [INFO] default - [2024-04-23T03:13:10.020Z] GET /character/all
+[2024-04-22T22:13:10.021] [INFO] default - Body: {}
+[2024-04-22T22:14:10.010] [INFO] default - [2024-04-23T03:14:10.010Z] GET /character/all
+[2024-04-22T22:14:10.011] [INFO] default - Body: {}
+[2024-04-22T22:15:10.025] [INFO] default - [2024-04-23T03:15:10.024Z] GET /character/all
+[2024-04-22T22:15:10.025] [INFO] default - Body: {}
+[2024-04-22T22:16:10.011] [INFO] default - [2024-04-23T03:16:10.011Z] GET /character/all
+[2024-04-22T22:16:10.012] [INFO] default - Body: {}
+[2024-04-22T22:16:39.948] [INFO] default - [2024-04-23T03:16:39.948Z] GET /api-docs/
+[2024-04-22T22:16:39.948] [INFO] default - Body: {}
+[2024-04-22T22:16:40.001] [INFO] default - [2024-04-23T03:16:40.001Z] GET /api-docs/swagger-ui.css
+[2024-04-22T22:16:40.001] [INFO] default - Body: {}
+[2024-04-22T22:16:40.004] [INFO] default - [2024-04-23T03:16:40.004Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T22:16:40.004] [INFO] default - Body: {}
+[2024-04-22T22:16:40.006] [INFO] default - [2024-04-23T03:16:40.006Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T22:16:40.006] [INFO] default - Body: {}
+[2024-04-22T22:16:40.007] [INFO] default - [2024-04-23T03:16:40.007Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T22:16:40.008] [INFO] default - Body: {}
+[2024-04-22T22:16:40.349] [INFO] default - [2024-04-23T03:16:40.349Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T22:16:40.350] [INFO] default - Body: {}
+[2024-04-22T22:17:10.022] [INFO] default - [2024-04-23T03:17:10.022Z] GET /character/all
+[2024-04-22T22:17:10.023] [INFO] default - Body: {}
+[2024-04-22T22:17:37.949] [INFO] default - [2024-04-23T03:17:37.948Z] GET /character/id/1
+[2024-04-22T22:17:37.949] [INFO] default - Body: {}
+[2024-04-22T22:18:10.017] [INFO] default - [2024-04-23T03:18:10.017Z] GET /character/all
+[2024-04-22T22:18:10.018] [INFO] default - Body: {}
+[2024-04-22T22:19:10.010] [INFO] default - [2024-04-23T03:19:10.010Z] GET /character/all
+[2024-04-22T22:19:10.011] [INFO] default - Body: {}
+[2024-04-22T22:20:10.013] [INFO] default - [2024-04-23T03:20:10.012Z] GET /character/all
+[2024-04-22T22:20:10.013] [INFO] default - Body: {}
+[2024-04-22T22:20:28.408] [INFO] default - [2024-04-23T03:20:28.408Z] PUT /character/id
+[2024-04-22T22:20:28.408] [INFO] default - Body: {"status":"Alive","species":"Human","gender":"Female","name":"Pato","origin":1,"location":1,"image":"asdf","episode":"1,2","url":"https://"}
+[2024-04-22T22:21:10.012] [INFO] default - [2024-04-23T03:21:10.012Z] GET /character/all
+[2024-04-22T22:21:10.013] [INFO] default - Body: {}
+[2024-04-22T22:22:10.023] [INFO] default - [2024-04-23T03:22:10.023Z] GET /character/all
+[2024-04-22T22:22:10.024] [INFO] default - Body: {}
+[2024-04-22T22:23:10.019] [INFO] default - [2024-04-23T03:23:10.019Z] GET /character/all
+[2024-04-22T22:23:10.020] [INFO] default - Body: {}
+[2024-04-22T22:24:10.030] [INFO] default - [2024-04-23T03:24:10.030Z] GET /character/all
+[2024-04-22T22:24:10.032] [INFO] default - Body: {}
+[2024-04-22T22:24:20.737] [INFO] default - [2024-04-23T03:24:20.737Z] GET /api-docs/
+[2024-04-22T22:24:20.738] [INFO] default - Body: {}
+[2024-04-22T22:24:20.787] [INFO] default - [2024-04-23T03:24:20.787Z] GET /api-docs/swagger-ui.css
+[2024-04-22T22:24:20.788] [INFO] default - Body: {}
+[2024-04-22T22:24:20.790] [INFO] default - [2024-04-23T03:24:20.790Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T22:24:20.793] [INFO] default - Body: {}
+[2024-04-22T22:24:20.796] [INFO] default - [2024-04-23T03:24:20.796Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T22:24:20.797] [INFO] default - Body: {}
+[2024-04-22T22:24:20.801] [INFO] default - [2024-04-23T03:24:20.801Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T22:24:20.802] [INFO] default - Body: {}
+[2024-04-22T22:24:21.135] [INFO] default - [2024-04-23T03:24:21.135Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T22:24:21.135] [INFO] default - Body: {}
+[2024-04-22T22:24:52.526] [INFO] default - [2024-04-23T03:24:52.526Z] PUT /character/id
+[2024-04-22T22:24:52.527] [INFO] default - Body: {"status":"Alive","species":"Human","gender":"Female","name":"Pato","origin":1,"location":1,"image":"asdf","episode":"1,2","url":"https://"}
+[2024-04-22T22:24:52.568] [ERROR] default - Error when updating character { statusCode: 500 }
+[2024-04-22T22:25:10.018] [INFO] default - [2024-04-23T03:25:10.018Z] GET /character/all
+[2024-04-22T22:25:10.018] [INFO] default - Body: {}
+[2024-04-22T22:26:10.020] [INFO] default - [2024-04-23T03:26:10.020Z] GET /character/all
+[2024-04-22T22:26:10.020] [INFO] default - Body: {}
+[2024-04-22T22:27:10.024] [INFO] default - [2024-04-23T03:27:10.024Z] GET /character/all
+[2024-04-22T22:27:10.024] [INFO] default - Body: {}
+[2024-04-22T22:27:43.096] [INFO] default - [2024-04-23T03:27:43.096Z] PUT /character/1
+[2024-04-22T22:27:43.096] [INFO] default - Body: {"name":"Pato","status":"Inactive","species":"Human","gender":"Female","origin":1,"location":1,"image":"image","episode":"1,2","url":"http://www.midominio.com","created":"Yovany"}
+[2024-04-22T22:27:43.144] [INFO] default - Character upate in DB
+[2024-04-22T22:28:10.014] [INFO] default - [2024-04-23T03:28:10.014Z] GET /character/all
+[2024-04-22T22:28:10.015] [INFO] default - Body: {}
+[2024-04-22T22:28:23.064] [INFO] default - [2024-04-23T03:28:23.064Z] PUT /character/id
+[2024-04-22T22:28:23.064] [INFO] default - Body: {"status":"Alive","species":"Human","gender":"Female","name":"Pato","origin":1,"location":1,"image":"asdf","episode":"1,2","url":"https://","created":"Yovany"}
+[2024-04-22T22:28:23.108] [ERROR] default - Error when updating character { statusCode: 500 }
+[2024-04-22T22:29:10.017] [INFO] default - [2024-04-23T03:29:10.017Z] GET /character/all
+[2024-04-22T22:29:10.018] [INFO] default - Body: {}
+[2024-04-22T22:30:10.022] [INFO] default - [2024-04-23T03:30:10.022Z] GET /character/all
+[2024-04-22T22:30:10.023] [INFO] default - Body: {}
+[2024-04-22T22:30:46.052] [INFO] default - [2024-04-23T03:30:46.051Z] GET /api-docs/
+[2024-04-22T22:30:46.056] [INFO] default - Body: {}
+[2024-04-22T22:30:46.103] [INFO] default - [2024-04-23T03:30:46.103Z] GET /api-docs/swagger-ui.css
+[2024-04-22T22:30:46.123] [INFO] default - Body: {}
+[2024-04-22T22:30:46.128] [INFO] default - [2024-04-23T03:30:46.128Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T22:30:46.131] [INFO] default - Body: {}
+[2024-04-22T22:30:46.140] [INFO] default - [2024-04-23T03:30:46.140Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T22:30:46.141] [INFO] default - Body: {}
+[2024-04-22T22:30:46.142] [INFO] default - [2024-04-23T03:30:46.142Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T22:30:46.143] [INFO] default - Body: {}
+[2024-04-22T22:30:46.436] [INFO] default - [2024-04-23T03:30:46.436Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T22:30:46.436] [INFO] default - Body: {}
+[2024-04-22T22:31:01.877] [INFO] default - [2024-04-23T03:31:01.877Z] PUT /character/1
+[2024-04-22T22:31:01.877] [INFO] default - Body: {"status":"Alive","species":"Human","gender":"Female","name":"Pato","origin":1,"location":1,"image":"asdf","episode":"1,2","url":"https://","created":"Yovany"}
+[2024-04-22T22:31:01.979] [INFO] default - Character upate in DB
+[2024-04-22T22:31:10.020] [INFO] default - [2024-04-23T03:31:10.020Z] GET /character/all
+[2024-04-22T22:31:10.021] [INFO] default - Body: {}
+[2024-04-22T22:32:10.021] [INFO] default - [2024-04-23T03:32:10.021Z] GET /character/all
+[2024-04-22T22:32:10.021] [INFO] default - Body: {}
+[2024-04-22T22:33:10.010] [INFO] default - [2024-04-23T03:33:10.010Z] GET /character/all
+[2024-04-22T22:33:10.010] [INFO] default - Body: {}
+[2024-04-22T22:34:10.016] [INFO] default - [2024-04-23T03:34:10.016Z] GET /character/all
+[2024-04-22T22:34:10.017] [INFO] default - Body: {}
+[2024-04-22T22:35:10.023] [INFO] default - [2024-04-23T03:35:10.023Z] GET /character/all
+[2024-04-22T22:35:10.024] [INFO] default - Body: {}
+[2024-04-22T22:36:10.016] [INFO] default - [2024-04-23T03:36:10.016Z] GET /character/all
+[2024-04-22T22:36:10.016] [INFO] default - Body: {}
+[2024-04-22T22:37:10.025] [INFO] default - [2024-04-23T03:37:10.025Z] GET /character/all
+[2024-04-22T22:37:10.025] [INFO] default - Body: {}
+[2024-04-22T22:38:10.014] [INFO] default - [2024-04-23T03:38:10.014Z] GET /character/all
+[2024-04-22T22:38:10.015] [INFO] default - Body: {}
+[2024-04-22T22:39:10.039] [INFO] default - [2024-04-23T03:39:10.038Z] GET /character/all
+[2024-04-22T22:39:10.040] [INFO] default - Body: {}
+[2024-04-22T22:39:14.040] [INFO] default - [2024-04-23T03:39:14.040Z] GET /api-docs/
+[2024-04-22T22:39:14.040] [INFO] default - Body: {}
+[2024-04-22T22:39:14.109] [INFO] default - [2024-04-23T03:39:14.109Z] GET /api-docs/swagger-ui.css
+[2024-04-22T22:39:14.110] [INFO] default - Body: {}
+[2024-04-22T22:39:14.111] [INFO] default - [2024-04-23T03:39:14.111Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T22:39:14.112] [INFO] default - Body: {}
+[2024-04-22T22:39:14.113] [INFO] default - [2024-04-23T03:39:14.113Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T22:39:14.113] [INFO] default - Body: {}
+[2024-04-22T22:39:14.114] [INFO] default - [2024-04-23T03:39:14.114Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T22:39:14.114] [INFO] default - Body: {}
+[2024-04-22T22:39:14.390] [INFO] default - [2024-04-23T03:39:14.390Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T22:39:14.390] [INFO] default - Body: {}
+[2024-04-22T22:40:10.021] [INFO] default - [2024-04-23T03:40:10.021Z] GET /character/all
+[2024-04-22T22:40:10.022] [INFO] default - Body: {}
+[2024-04-22T22:41:10.021] [INFO] default - [2024-04-23T03:41:10.021Z] GET /character/all
+[2024-04-22T22:41:10.022] [INFO] default - Body: {}
+[2024-04-22T22:42:02.295] [INFO] default - [2024-04-23T03:42:02.295Z] POST /character
+[2024-04-22T22:42:02.296] [INFO] default - Body: {"status":"Alive","species":"Aliens","gender":"Male","name":"Yova","origin":1,"location":1,"image":"image/photo.jpg","url":"http://github","created":"Yovany"}
+[2024-04-22T22:42:02.362] [INFO] default - Character add to DB
+[2024-04-22T22:42:10.021] [INFO] default - [2024-04-23T03:42:10.021Z] GET /character/all
+[2024-04-22T22:42:10.021] [INFO] default - Body: {}
+[2024-04-22T22:43:10.023] [INFO] default - [2024-04-23T03:43:10.023Z] GET /character/all
+[2024-04-22T22:43:10.024] [INFO] default - Body: {}
+[2024-04-22T22:44:10.015] [INFO] default - [2024-04-23T03:44:10.015Z] GET /character/all
+[2024-04-22T22:44:10.015] [INFO] default - Body: {}
+[2024-04-22T22:45:10.018] [INFO] default - [2024-04-23T03:45:10.018Z] GET /character/all
+[2024-04-22T22:45:10.019] [INFO] default - Body: {}
+[2024-04-22T22:46:10.016] [INFO] default - [2024-04-23T03:46:10.016Z] GET /character/all
+[2024-04-22T22:46:10.017] [INFO] default - Body: {}
+[2024-04-22T22:53:04.277] [INFO] default - [2024-04-23T03:53:04.276Z] GET /api-docs/
+[2024-04-22T22:53:04.279] [INFO] default - Body: {}
+[2024-04-22T22:53:04.360] [INFO] default - [2024-04-23T03:53:04.360Z] GET /api-docs/swagger-ui.css
+[2024-04-22T22:53:04.361] [INFO] default - Body: {}
+[2024-04-22T22:53:04.363] [INFO] default - [2024-04-23T03:53:04.363Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-22T22:53:04.363] [INFO] default - Body: {}
+[2024-04-22T22:53:04.366] [INFO] default - [2024-04-23T03:53:04.366Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-22T22:53:04.367] [INFO] default - Body: {}
+[2024-04-22T22:53:04.368] [INFO] default - [2024-04-23T03:53:04.368Z] GET /api-docs/swagger-ui-init.js
+[2024-04-22T22:53:04.369] [INFO] default - Body: {}
+[2024-04-22T22:53:04.730] [INFO] default - [2024-04-23T03:53:04.729Z] GET /api-docs/favicon-32x32.png
+[2024-04-22T22:53:04.730] [INFO] default - Body: {}
+[2024-04-22T22:53:10.027] [INFO] default - [2024-04-23T03:53:10.027Z] GET /character/all
+[2024-04-22T22:53:10.029] [INFO] default - Body: {}
+[2024-04-22T22:53:13.300] [INFO] default - [2024-04-23T03:53:13.300Z] DELETE /character/3
+[2024-04-22T22:53:13.300] [INFO] default - Body: {}
+[2024-04-22T22:53:13.329] [INFO] default - Character delete to DB
+[2024-04-22T22:54:10.024] [INFO] default - [2024-04-23T03:54:10.023Z] GET /character/all
+[2024-04-22T22:54:10.024] [INFO] default - Body: {}
+[2024-04-22T22:55:10.014] [INFO] default - [2024-04-23T03:55:10.014Z] GET /character/all
+[2024-04-22T22:55:10.014] [INFO] default - Body: {}
+[2024-04-22T22:56:10.020] [INFO] default - [2024-04-23T03:56:10.020Z] GET /character/all
+[2024-04-22T22:56:10.020] [INFO] default - Body: {}
+[2024-04-22T22:57:10.020] [INFO] default - [2024-04-23T03:57:10.020Z] GET /character/all
+[2024-04-22T22:57:10.021] [INFO] default - Body: {}
+[2024-04-22T22:58:10.015] [INFO] default - [2024-04-23T03:58:10.015Z] GET /character/all
+[2024-04-22T22:58:10.015] [INFO] default - Body: {}
+[2024-04-22T22:59:10.017] [INFO] default - [2024-04-23T03:59:10.017Z] GET /character/all
+[2024-04-22T22:59:10.018] [INFO] default - Body: {}
+[2024-04-22T23:00:10.012] [INFO] default - [2024-04-23T04:00:10.012Z] GET /character/all
+[2024-04-22T23:00:10.013] [INFO] default - Body: {}
+[2024-04-22T23:01:10.056] [INFO] default - [2024-04-23T04:01:10.056Z] GET /character/all
+[2024-04-22T23:01:10.078] [INFO] default - Body: {}
