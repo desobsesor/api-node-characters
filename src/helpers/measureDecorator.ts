@@ -1,5 +1,8 @@
 
 import { performance } from 'perf_hooks';
+import log4js from 'log4js';
+
+const logger = log4js.getLogger('default');
 
 export const logMethodExecutionTime = (target: any, propertyKey: any, descriptor: any) => {
   const originalMethod = descriptor.value;
@@ -10,7 +13,7 @@ export const logMethodExecutionTime = (target: any, propertyKey: any, descriptor
     const endTime = performance.now();
     const executionTime = endTime - startTime;
 
-    console.log(`Method ${propertyKey} executed in ${executionTime}ms`);
+    logger.info(`Method ${propertyKey} executed in ${executionTime}ms`);
     return result;
   };
 

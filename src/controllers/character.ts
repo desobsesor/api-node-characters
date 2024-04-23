@@ -6,7 +6,7 @@ import { Character } from '../models/character';
 import NodeCache from 'node-cache';
 import { Origin } from '../models/origin';
 import { Location } from '../models/location';
-import { getAllCharactersByRickAndMorty, getAllCharactersByRickAndMortyGraphQl } from '../services/character';
+import { getAllCharactersByRickAndMortyGraphQl } from '../services/character';
 
 const cache = new NodeCache({ stdTTL: 3600 });
 
