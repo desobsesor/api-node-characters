@@ -29,7 +29,7 @@ const server = new ApolloServer({ typeDefs, resolvers });
 })();
 
 // Routers
-app.use('/', require('./helpers/jsonwebtoken'));
+app.use('/', require('./routes/jsonwebtoken'));
 app.use('/', require('./routes/character'));
 app.use('/', require('./routes/swagger'));
 

@@ -1,27 +1,28 @@
 import log4js from 'log4js';
+import * as jwt from 'jsonwebtoken';
 
 const logger = log4js.getLogger('default');
 
-export const autenticacion = (req: any, res: any, next: any) => {
+export const authentication = (req: any, res: any, next: any) => {
     const token = req.headers['authorization'];
-    logger.info('Validando autorización!');
+    logger.info('Validating authorization!');
 
     if (!token) {
-        logger.error('No se ha proporcionado un token de acceso', { statusCode: 401});
+        logger.error('No access token provided', { statusCode: 401});
         return res.status(401).json({
-            error: 'No se ha proporcionado un token de acceso',
+            error: 'No access token provided',
         });
     }
 
     try {
-        const decoded = true; // jwt.verify(token, 'secret');
+        const decoded = jwt.verify(token, 'secret');
 
         req.user = decoded;
 
         next();
     } catch (err) {
         return res.status(401).json({
-            error: 'Token de acceso inválido',
+            error: 'Invalid access token',
         });
     }
 };
