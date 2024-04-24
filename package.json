@@ -2,11 +2,11 @@
   "name": "api-node-characters",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index",
+  "main": "build/src/index",
   "scripts": {
     "compile": "tsc",
-    "start": "npm run compile && node ./build/index.js",
-    "start-dev": "npm run compile && node ./build/index.js",
+    "start": "npm run compile && node ./build/src/index.js",
+    "start-dev": "npm run compile && node ./build/src/index.js",
     "test": "jest"
   },
   "author": "Yovany Suárez Silva",

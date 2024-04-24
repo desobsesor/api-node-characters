@@ -2,10 +2,11 @@ import express from 'express';
 
 const router = express.Router();
 import { validateData } from '../middlewares/dataValidation';
-import { deleteCharacterById, getAllCharacters, getCharacterById, getCharacterByName, getSearhByCharacters, setCharacter, updateCharacter } from '../controllers/character';
+import { deleteCharacterById, getAllCharacters, getCharacterById, getCharacterByName, getSearhByCharacters, setCharacter, setInitialCharacterData, updateCharacter } from '../controllers/character';
 
 
 router.post('/character/search', validateData, getSearhByCharacters); // graphql external
+router.post('/character/init', validateData, setInitialCharacterData);
 router.get('/character/all', validateData, getAllCharacters);
 router.get('/character/id/:id', validateData, getCharacterById);
 router.get('/character/name/:name', validateData, getCharacterByName);
