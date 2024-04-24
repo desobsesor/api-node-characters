@@ -80,6 +80,50 @@ paths:
                   error:
                     type: string
                     description: Error message.
+  /character/search:
+    post:
+      summary: Search characters by status, species, gender, and name
+      tags:
+        - Characters - REST services
+      requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: The character's status (e.g., alive, dead, unknown)
+                  species:
+                    type: string
+                    description: The character's species
+                  gender:
+                    type: string
+                    description: The character's gender (e.g., male, female, unknown)
+                  name:
+                    type: string
+                    description: The character's name
+      responses:
+        '200':
+          description: Successful character search
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  # Add properties for your character object here (e.g., name, status, etc.)
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message
   /character/all:
     get:
       summary: Get All Characters

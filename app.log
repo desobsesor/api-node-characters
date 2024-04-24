@@ -18796,3 +18796,52 @@
 [2024-04-24T13:13:59.219] [INFO] default - [2024-04-24T18:13:59.219Z] POST /character/search?status=Alive&species=Alien&gender=Male&name=Arthricia
 [2024-04-24T13:13:59.220] [INFO] default - Body: {"query":"{\r\n    characters(page: 2, filter: { status: \"Alive\", species: \"Human\" }) {\r\n    info {\r\n      count\r\n    }\r\n    results {\r\n      name\r\n    }\r\n  }\r\n  location(id: 1) {\r\n    id\r\n  }\r\n  episodesByIds(ids: [1, 2]) {\r\n    id\r\n  }\r\n}"}
 [2024-04-24T13:13:59.222] [INFO] default - Getting characters data from cache
+[2024-04-24T15:14:23.561] [INFO] default - [2024-04-24T20:14:23.560Z] GET /api-docs/
+[2024-04-24T15:14:23.569] [INFO] default - Body: {}
+[2024-04-24T15:14:23.698] [INFO] default - [2024-04-24T20:14:23.698Z] GET /api-docs/swagger-ui.css
+[2024-04-24T15:14:23.700] [INFO] default - Body: {}
+[2024-04-24T15:14:23.702] [INFO] default - [2024-04-24T20:14:23.702Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-24T15:14:23.703] [INFO] default - Body: {}
+[2024-04-24T15:14:23.705] [INFO] default - [2024-04-24T20:14:23.705Z] GET /api-docs/swagger-ui-init.js
+[2024-04-24T15:14:23.706] [INFO] default - Body: {}
+[2024-04-24T15:14:23.708] [INFO] default - [2024-04-24T20:14:23.708Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-24T15:14:23.710] [INFO] default - Body: {}
+[2024-04-24T15:14:24.289] [INFO] default - [2024-04-24T20:14:24.289Z] GET /api-docs/favicon-32x32.png
+[2024-04-24T15:14:24.290] [INFO] default - Body: {}
+[2024-04-24T15:14:29.886] [INFO] default - [2024-04-24T20:14:29.886Z] GET /character/all
+[2024-04-24T15:14:29.886] [INFO] default - Body: {}
+[2024-04-24T15:23:56.795] [INFO] default - [2024-04-24T20:23:56.795Z] GET /
+[2024-04-24T15:23:56.797] [INFO] default - Body: {}
+[2024-04-24T15:23:58.740] [INFO] default - [2024-04-24T20:23:58.740Z] GET /favicon.ico
+[2024-04-24T15:23:58.741] [INFO] default - Body: {}
+[2024-04-24T15:24:02.308] [INFO] default - [2024-04-24T20:24:02.308Z] GET /api-docs
+[2024-04-24T15:24:02.309] [INFO] default - Body: {}
+[2024-04-24T15:24:02.321] [INFO] default - [2024-04-24T20:24:02.321Z] GET /api-docs/
+[2024-04-24T15:24:02.321] [INFO] default - Body: {}
+[2024-04-24T15:24:02.375] [INFO] default - [2024-04-24T20:24:02.375Z] GET /api-docs/swagger-ui.css
+[2024-04-24T15:24:02.376] [INFO] default - Body: {}
+[2024-04-24T15:24:02.389] [INFO] default - [2024-04-24T20:24:02.389Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-24T15:24:02.390] [INFO] default - Body: {}
+[2024-04-24T15:24:02.392] [INFO] default - [2024-04-24T20:24:02.392Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-24T15:24:02.392] [INFO] default - Body: {}
+[2024-04-24T15:24:02.394] [INFO] default - [2024-04-24T20:24:02.394Z] GET /api-docs/swagger-ui-init.js
+[2024-04-24T15:24:02.394] [INFO] default - Body: {}
+[2024-04-24T15:29:59.808] [INFO] default - [2024-04-24T20:29:59.807Z] GET /api-docs/
+[2024-04-24T15:29:59.810] [INFO] default - Body: {}
+[2024-04-24T15:29:59.869] [INFO] default - [2024-04-24T20:29:59.868Z] GET /api-docs/swagger-ui.css
+[2024-04-24T15:29:59.870] [INFO] default - Body: {}
+[2024-04-24T15:29:59.873] [INFO] default - [2024-04-24T20:29:59.873Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-24T15:29:59.874] [INFO] default - Body: {}
+[2024-04-24T15:29:59.879] [INFO] default - [2024-04-24T20:29:59.879Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-24T15:29:59.881] [INFO] default - Body: {}
+[2024-04-24T15:29:59.882] [INFO] default - [2024-04-24T20:29:59.882Z] GET /api-docs/swagger-ui-init.js
+[2024-04-24T15:29:59.883] [INFO] default - Body: {}
+[2024-04-24T15:30:00.299] [INFO] default - [2024-04-24T20:30:00.299Z] GET /api-docs/favicon-32x32.png
+[2024-04-24T15:30:00.299] [INFO] default - Body: {}
+[2024-04-24T15:31:00.577] [INFO] default - [2024-04-24T20:31:00.577Z] POST /graphql?status=Alive&species=Alien&gender=Male&name=Arthricia
+[2024-04-24T15:31:00.577] [INFO] default - Body: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}
+[2024-04-24T15:32:10.689] [INFO] default - [2024-04-24T20:32:10.689Z] POST /character/search?status=Alive&species=Alien&gender=Male&name=Arthricia
+[2024-04-24T15:32:10.689] [INFO] default - Body: {"query":"{\r\n    characters(page: 2, filter: { status: \"Alive\", species: \"Human\" }) {\r\n    info {\r\n      count\r\n    }\r\n    results {\r\n      name\r\n    }\r\n  }\r\n  location(id: 1) {\r\n    id\r\n  }\r\n  episodesByIds(ids: [1, 2]) {\r\n    id\r\n  }\r\n}"}
+[2024-04-24T15:32:29.704] [INFO] default - [2024-04-24T20:32:29.704Z] POST /character/search?status=Alive&species=Alien&gender=Male&name=Arthricia
+[2024-04-24T15:32:29.704] [INFO] default - Body: {"query":"{\r\n    characters(page: 2, filter: { status: \"Alive\", species: \"Human\" }) {\r\n    info {\r\n      count\r\n    }\r\n    results {\r\n      name\r\n    }\r\n  }\r\n  location(id: 1) {\r\n    id\r\n  }\r\n  episodesByIds(ids: [1, 2]) {\r\n    id\r\n  }\r\n}"}
+[2024-04-24T15:32:29.705] [INFO] default - Getting characters data from cache
