@@ -113,7 +113,6 @@ paths:
                 type: array
                 items:
                   type: object
-                  # Add properties for your character object here (e.g., name, status, etc.)
         '500':
           description: Internal server error
           content:
