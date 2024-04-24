@@ -5,7 +5,7 @@ import { Location, MLocation } from './location';
 import { Episode, MEpisode } from './episode';
 
 export type MCharacter = {
-    id: Number;
+    id: number;
     name: string;
     status: string;
     location: MLocation;
@@ -14,18 +14,24 @@ export type MCharacter = {
     episode: MEpisode;
     species: string;
     gender: string;
+    image: string;
+    url: string;
+    created: string;
 };
 
 export  type FCharacter = {
-    id: Number;
+    id: number;
     name: string;
     status: string;
-    location: Number;
-    origin: Number;
+    location: number;
+    origin: number;
     type: string;
-    episode: Number;
+    episode: number;
     species: string;
     gender: string;
+    image: string;
+    url: string;
+    created: string;
 };
 
 export class Character extends Model { }
