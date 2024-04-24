@@ -3,5 +3,3 @@ build
 seeders
 migrations
 models
-
-/package-lock.json

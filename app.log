@@ -18526,3 +18526,16 @@
 [2024-04-24T01:40:43.953] [INFO] default - Body: {}
 [2024-04-24T01:41:59.119] [INFO] default - [2024-04-24T06:41:59.118Z] GET /character/id/21
 [2024-04-24T01:41:59.120] [INFO] default - Body: {}
+[2024-04-24T09:10:35.075] [INFO] default - [2024-04-24T14:10:35.074Z] POST /graphql
+[2024-04-24T09:10:35.076] [INFO] default - Body: {"query":"{\r\n  characters(status: \"Alive\", species: \"Human\", gender: \"Female\", name: \"Pato\", origin: \"1\") {\r\n    id\r\n    name\r\n    status\r\n    species\r\n    gender\r\n    image\r\n    url\r\n  }\r\n}"}
+[2024-04-24T09:12:25.939] [INFO] default - [2024-04-24T14:12:25.939Z] POST /graphql
+[2024-04-24T09:12:25.940] [INFO] default - Body: {"query":"{\r\n  characters(status: \"Alive\", species: \"Alien\", gender: \"Female\", name: \"Arthricia\", origin: \"9\") {\r\n    id\r\n    name\r\n    status\r\n    species\r\n    gender\r\n    image\r\n    url\r\n  }\r\n}"}
+[2024-04-24T09:13:13.487] [INFO] default - [2024-04-24T14:13:13.487Z] POST /graphql
+[2024-04-24T09:13:13.487] [INFO] default - Body: {"query":"{\r\n  characters(status: \"Alive\", species: \"Alien\", gender: \"Female\", name: \"Arthricia\", origin: \"9\") {\r\n    id\r\n    name\r\n    status\r\n    species\r\n    gender\r\n    url\r\n  }\r\n}"}
+[2024-04-24T09:13:19.346] [INFO] default - [2024-04-24T14:13:19.346Z] POST /graphql
+[2024-04-24T09:13:19.346] [INFO] default - Body: {"query":"{\r\n  characters(status: \"Alive\", species: \"Alien\", gender: \"Female\", name: \"Arthricia\", origin: \"9\") {\r\n    id\r\n    name\r\n    status\r\n    species\r\n    gender\r\n  }\r\n}"}
+[2024-04-24T10:18:57.153] [INFO] default - [2024-04-24T15:18:57.153Z] POST /graphql
+[2024-04-24T10:18:57.177] [INFO] default - Body: {"query":"{\r\n  characters(status: \"Alive\", species: \"Alien\", gender: \"Female\", name: \"Arthricia\", origin: \"9\") {\r\n    id\r\n    name\r\n    status\r\n    species\r\n    gender\r\n    image\r\n    url\r\n  }\r\n}"}
+[2024-04-24T10:37:04.048] [INFO] default - [2024-04-24T15:37:04.047Z] POST /character/init
+[2024-04-24T10:37:04.050] [INFO] default - Body: {}
+[2024-04-24T10:37:05.836] [INFO] default - Initial characters data has been loaded into the database

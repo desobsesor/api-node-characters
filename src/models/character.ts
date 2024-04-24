@@ -14,6 +14,9 @@ export type MCharacter = {
     episode: MEpisode;
     species: string;
     gender: string;
+    image: string;
+    url: string;
+    created: string;
 };
 
 export  type FCharacter = {
@@ -26,6 +29,9 @@ export  type FCharacter = {
     episode: number;
     species: string;
     gender: string;
+    image: string;
+    url: string;
+    created: string;
 };
 
 export class Character extends Model { }
