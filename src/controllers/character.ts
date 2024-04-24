@@ -1,12 +1,13 @@
 import { createClient } from 'redis';
 import log4js from 'log4js';
-import { Character } from '../models/character';
+import { Character, FCharacter, MCharacter } from '../models/character';
 
 
 import NodeCache from 'node-cache';
 import { Origin } from '../models/origin';
 import { Location } from '../models/location';
-import { getAllCharactersByRickAndMortyGraphQl } from '../services/character';
+import { getAllCharactersByRickAndMorty, getAllCharactersByRickAndMortyGraphQl, getAllEpisodesRickAndMorty, getAllLocationRickAndMorty } from '../services/character';
+import { Episode } from '../models/episode';
 
 const cache = new NodeCache({ stdTTL: 3600 });
 
@@ -26,19 +27,19 @@ export const getSearhByCharacters = async (req: any, res: any) => {
         const cacheKey = `character?status=${status}&species=${species}&gender=${gender}&name=${name}&origin=${origin}`;
 
         const cachedData = await redisClient.get(cacheKey);
-        if (cachedData) { 
+        if (cachedData) {
             logger.info('Getting characters data from cache');
             return res.status(201).json(JSON.parse(cachedData));
         }
 
-        const response = await getAllCharactersByRickAndMortyGraphQl( status, species, gender, name, origin );
+        const response = await getAllCharactersByRickAndMortyGraphQl(status, species, gender, name, origin);
 
         const cacheValue = JSON.stringify(response.data.results);
-        await redisClient.set(cacheKey, cacheValue, { EX: cacheTTL }); 
+        await redisClient.set(cacheKey, cacheValue, { EX: cacheTTL });
 
         res.status(201).json(response.data.results);
     } catch (error) {
-        logger.error('Error when querying characters', { statusCode: 500});
+        logger.error('Error when querying characters', { statusCode: 500 });
         res.status(500).json({ error: 'Error when querying characters' });
     }
 };
@@ -49,14 +50,15 @@ export const getAllCharacters = async (req: any, res: any) => {
         Origin.hasMany(Character, { foreignKey: "origin" })
         Character.belongsTo(Location, { foreignKey: "location" });
         Location.hasMany(Character, { foreignKey: "location" })
+        Character.belongsTo(Episode, { foreignKey: "episode" });
+        Episode.hasMany(Character, { foreignKey: "episode" })
 
         const characters = await Character.findAll({
-            include: [Origin, Location]
+            include: [Origin, Location, Episode]
         });
         res.status(200).json(characters);
     } catch (error) {
-        
-        logger.error('Error getting all characters', { statusCode: 500});
+        logger.error('Error getting all characters', { statusCode: 500 });
         res.status(500).json({ error: 'Error getting all characters' });
     }
 };
@@ -64,11 +66,25 @@ export const getAllCharacters = async (req: any, res: any) => {
 export const getCharacterById = async (req: any, res: any) => {
     const { id } = req.params;
     try {
-        const character = await Character.findByPk(id);
+        Character.belongsTo(Origin, { foreignKey: "origin" });
+        Origin.hasMany(Character, { foreignKey: "origin" })
+        Character.belongsTo(Location, { foreignKey: "location" });
+        Location.hasMany(Character, { foreignKey: "location" })
+        Character.belongsTo(Episode, { foreignKey: "episode" });
+        Episode.hasMany(Character, { foreignKey: "episode" })
+
+        const character = await Character.findByPk(id, {
+            include: [Origin, Location, Episode]
+        });
+
+        if (!character) {
+            res.status(400).json({ msg: "Not found character by ID" });
+            return;
+        }
+
         res.status(200).json(character);
     } catch (error) {
-        
-        logger.error('Error when searching character by ID', { statusCode: 500});
+        logger.error('Error when searching character by ID', { statusCode: 500 });
         res.status(500).json({ error: 'Error when searching character by ID' });
     }
 };
@@ -79,11 +95,90 @@ export const getCharacterByName = async (req: any, res: any) => {
         const character = await Character.findOne({
             where: { name },
         });
+
+        if (!character) {
+            res.status(200).json({ msg: "Not found character by Name" });
+        }
+
         res.status(200).json(character);
     } catch (error) {
-        
-        logger.error('Error when searching character by Name', { statusCode: 500});
+        logger.error('Error when searching character by Name', { statusCode: 500 });
         res.status(500).json({ error: 'Error when searching character by Name' });
+    }
+};
+
+export const setInitialCharacterData = async (req: any, res: any) => {
+    try {
+        /*
+        await Episode.sync({ force: true });
+        const responseEpisode = await getAllEpisodesRickAndMorty();
+        const episodes: MEpisode[] = responseEpisode.data.results;
+        const episodes_: FEpisode[] = [];
+        episodes.forEach(element => {
+            const episode: FEpisode = {
+                id: element.id,
+                episodes: element.characters,
+            }
+
+            episodes_.push(episode)
+        });
+        await Episode.bulkCreate(episodes_);
+
+        await Location.sync({ force: true });
+        const responseLocation = await getAllLocationRickAndMorty();
+        await Location.bulkCreate(responseLocation.data.results);
+
+        await Origin.sync({ force: true });
+        const responseOrigin = await getAllLocationRickAndMorty();
+        await Origin.bulkCreate(responseOrigin.data.results); 
+        */
+
+        await Character.sync({ force: true });
+        const response = await getAllCharactersByRickAndMorty();
+
+        const characters: MCharacter[] = response.data.results;
+        const characters_: FCharacter[] = [];
+
+
+        const promises: any[] = [];
+        characters.forEach(element => {
+            promises.push(Promise.all([
+                Origin.findOne({ where: { name: element.origin.name } }),
+                Location.findOne({ where: { name: element.location.name } }),
+                Episode.findOne({ where: { episodes: element.episode } })
+            ]));
+        });
+
+        const results = await Promise.all(promises);
+
+        characters.forEach((element, index) => {
+            const [modifiedOrigin, modifiedLocation, modifiedEpisode] = results[index];
+            const character: FCharacter = {
+                id: element.id,
+                name: element.name,
+                status: element.status,
+                species: element.species,
+                gender: element.gender,
+                episode: modifiedEpisode?.dataValues.episode || 1,
+                origin: modifiedOrigin?.dataValues.origin || 1,
+                location: modifiedLocation?.dataValues.location || 1,
+                type: element.type
+            }
+
+            characters_.push(character)
+        });
+
+        await Character.bulkCreate(characters_);
+
+        logger.info('Initial characters data has been loaded into the database');
+        res.status(200).json({
+            ok: true,
+            status: 200,
+            message: 'Initial characters data has been loaded into the database'
+        });
+    } catch (error) {
+        logger.error('Error loading initial character data', { statusCode: 500 });
+        res.status(500).json({ error: 'Error loading initial character data', message: error });
     }
 };
 
@@ -91,11 +186,11 @@ export const setCharacter = async (req: any, res: any) => {
     const { status, species, gender, name, origin, location, image, episode, url, created } = req.body;
 
     try {
-        await Character.sync()
+        await Character.sync();
         await Character.create({
             status, species, gender, name, origin, location, image, episode, url, created
         });
-        
+
         logger.info('Character add to DB');
         res.status(201).json({
             ok: true,
@@ -103,7 +198,7 @@ export const setCharacter = async (req: any, res: any) => {
             message: 'Character add to DB'
         });
     } catch (error) {
-        logger.error('Error when querying characters', { statusCode: 500});
+        logger.error('Error when querying characters', { statusCode: 500 });
         res.status(500).json({ error: 'Error when querying characters' });
     }
 };
@@ -134,7 +229,7 @@ export const updateCharacter = async (req: any, res: any) => {
             characterUpdate
         });
     } catch (error) {
-        logger.error('Error when updating character', { statusCode: 500});
+        logger.error('Error when updating character', { statusCode: 500 });
         res.status(500).json({ error: 'Error when updating characters' });
     }
 };
@@ -161,8 +256,8 @@ export const deleteCharacterById = async (req: any, res: any) => {
             character
         });
     } catch (error) {
-        
-        logger.error('Error when delete character by id', { statusCode: 500});
+
+        logger.error('Error when delete character by id', { statusCode: 500 });
         res.status(500).json({ error: 'Error when delete character by id' });
     }
 };

@@ -11,7 +11,10 @@ const environment: string = process.env.NODE_ENV || 'development';
 const configAPI = {
 	baseURL: isProductionEnvironment(environment)
 		? config['production'].endpointAllCharacters
-		: config['development'].endpointAllCharacters
+		: config['development'].endpointAllCharacters,
+  baseURLRickAndMorty: isProductionEnvironment(environment)
+		? config['production'].apiRickAndMorty
+		: config['development'].apiRickAndMorty
 };
 
 const query = `
@@ -31,17 +34,19 @@ const query = `
   }
 `;
 
-export const getAllCharactersByRickAndMorty = async (status: string, species: any, gender: string, name: string, origin: any) => {
-    const response = await axios.get(`${configAPI.baseURL}/api/character/?page=2`, {
-        params: {
-            status,
-            species,
-            gender,
-            name,
-            origin,
-        },
-    });
+export const getAllCharactersByRickAndMorty = async () => {
+    const response = await axios.get(`${configAPI.baseURLRickAndMorty}/character?page=2`);
     return response;
+};
+
+export const getAllLocationRickAndMorty = async () => {
+  const response = await axios.get(`${configAPI.baseURLRickAndMorty}/location`);
+  return response;
+};
+
+export const getAllEpisodesRickAndMorty = async () => {
+  const response = await axios.get(`${configAPI.baseURLRickAndMorty}/episode?page=3`);
+  return response;
 };
 
 export const getAllCharactersByRickAndMortyGraphQl = async (status: string, species: any, gender: string, name: string, origin: any) => {
@@ -57,12 +62,6 @@ export const getAllCharactersByRickAndMortyGraphQl = async (status: string, spec
             'Content-Type': 'application/json'
         }
     });
-
-    const data = response.data;
-    const character = data.data.character; // Extract the character data
-
-    console.log(`Character name: ${character.name}`);
-    console.log(`Character status: ${character.status}`);
 
     return response;
 };

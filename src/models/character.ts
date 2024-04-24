@@ -1,20 +1,31 @@
 import { DataTypes, Model } from 'sequelize';
 import { sequelize } from '../config/sequelize';
-import { Origin } from './origin';
-import { Location } from './location';
+import { MOrigin, Origin } from './origin';
+import { Location, MLocation } from './location';
+import { Episode, MEpisode } from './episode';
 
-export interface ICharacter {
-    id: number;
+export type MCharacter = {
+    id: Number;
     name: string;
     status: string;
+    location: MLocation;
+    origin: MOrigin;
+    type: string;
+    episode: MEpisode;
     species: string;
     gender: string;
-    origin: string;
-    location: string;
-    image: string;
-    episode: string;
-    url: string;
-    created: string;
+};
+
+export  type FCharacter = {
+    id: Number;
+    name: string;
+    status: string;
+    location: Number;
+    origin: Number;
+    type: string;
+    episode: Number;
+    species: string;
+    gender: string;
 };
 
 export class Character extends Model { }
@@ -43,19 +54,19 @@ Character.init(
             allowNull: false,
         },
         origin: {
-            type: DataTypes.INTEGER.UNSIGNED, //FK
+            type: DataTypes.INTEGER,
             allowNull: false,
             references: {
-                model: Origin, // name of Target model
-                key: 'origin', // key in Target model that we're referencing
+                model: Origin,
+                key: 'origin',
             },
         },
         location: {
-            type: DataTypes.INTEGER.UNSIGNED, //FK
+            type: DataTypes.INTEGER,
             allowNull: false,
             references: {
-                model: Location, // name of Target model
-                key: 'location', // key in Target model that we're referencing
+                model: Location,
+                key: 'location',
             },
         },
         image: {
@@ -63,8 +74,12 @@ Character.init(
             allowNull: true,
         },
         episode: {
-            type: DataTypes.STRING,
-            allowNull: true,
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: Episode, 
+                key: 'episode', 
+            },
         },
         url: {
             type: DataTypes.STRING,

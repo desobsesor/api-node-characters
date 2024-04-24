@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import { ApolloServer } from 'apollo-server-express';
-import { createCronJob } from './utils/cronJob'; 
+import { createCronJob } from './utils/cronJob';
 import { loggerMiddleware } from './middlewares/loggerMiddleware';
 
 // CronJob

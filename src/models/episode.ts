@@ -1,32 +1,27 @@
 import { DataTypes, Model } from 'sequelize';
 import { sequelize } from '../config/sequelize';
 
-export type MOrigin = {
+export type MEpisode = {
     id: Number;
-    name: string;
-    url: string;
+    characters: JSON;
 };
 
-export class Origin extends Model { }
+export class Episode extends Model { }
 
-Origin.init(
+Episode.init(
     {
-        origin: {
+        episode: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true,
         },
-        name: {
-            type: DataTypes.STRING,
+        episodes: {
+            type: DataTypes.JSON,
             allowNull: false,
-        },
-        url: {
-            type: DataTypes.STRING,
-            allowNull: true,
         }
     },
     {
         sequelize,
-        modelName: 'Origin',
+        modelName: 'Episode',
     }
 );
