@@ -2,7 +2,7 @@ import { DataTypes, Model } from 'sequelize';
 import { sequelize } from '../config/sequelize';
 
 export type MEpisode = {
-    id: Number;
+    id: number;
     characters: JSON;
 };
 

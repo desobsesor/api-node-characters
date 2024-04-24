@@ -2,7 +2,7 @@ import { DataTypes, Model } from 'sequelize';
 import { sequelize } from '../config/sequelize';
 
 export type MOrigin = {
-    id: Number;
+    id: number;
     name: string;
     url: string;
 };
