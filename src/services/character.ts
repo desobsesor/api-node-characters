@@ -18,18 +18,12 @@ const configAPI = {
 };
 
 const query = `
-  query MyQuery($status: status!, $species: species!, $name: name!, $gender: gender!, $origin: origin!) {
-    character(status: $status, species: $species, name: $name, gender: $gender, origin: $origin) {
+  query MyQuery($status: status!, $species: species!, $name: name!, $gender: gender!) {
+    character(status: $status, species: $species, name: $name, gender: $gender) {
       name
       status
       species
       gender
-      origin {
-        name
-      }
-      episode {
-        name
-      }
     }
   }
 `;
@@ -49,11 +43,10 @@ export const getAllEpisodesRickAndMorty = async () => {
   return response;
 };
 
-export const getAllCharactersByRickAndMortyGraphQl = async (status: string, species: any, gender: string, name: string, origin: any) => {
-    console.log('Bodys:');
-    const variables = { status, species, gender, name, origin };
+export const getAllCharactersByRickAndMortyGraphQl = async (status: string, species: string, name: string, gender: string) => {
+    const variables = { status, species, name, gender };
 
-    const response = await axios.post(`${configAPI.baseURL}/graphql`, {
+    const response = await axios.post(`${configAPI.baseURL}/graphql`, {  
         data: {
             query,
             variables

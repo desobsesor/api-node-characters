@@ -22,9 +22,8 @@ const redisClient = createClient();
 
 export const getSearhByCharacters = async (req: any, res: any) => {
     try {
-        const { status, species, gender, name, origin } = req.body;
-
-        const cacheKey = `character?status=${status}&species=${species}&gender=${gender}&name=${name}&origin=${origin}`;
+        const { status, species, gender, name } = req.query;
+        const cacheKey = `character?status=${status}&species=${species}&gender=${gender}&name=${name}`;
 
         const cachedData = await redisClient.get(cacheKey);
         if (cachedData) {
@@ -32,7 +31,7 @@ export const getSearhByCharacters = async (req: any, res: any) => {
             return res.status(201).json(JSON.parse(cachedData));
         }
 
-        const response = await getAllCharactersByRickAndMortyGraphQl(status, species, gender, name, origin);
+        const response = await getAllCharactersByRickAndMorty();
 
         const cacheValue = JSON.stringify(response.data.results);
         await redisClient.set(cacheKey, cacheValue, { EX: cacheTTL });
