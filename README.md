@@ -17,12 +17,11 @@ See **Deployment** to learn how to deploy the project.
 
 ### Pre- requirements 📋
 
-_NodeJS_
-_MySql_
-
-_Ubuntu 24 LTS in windows_
-_Redis in ubuntu_
-_Redis insight IDE_
+* _NodeJS_
+* _MySql_
+* _Ubuntu 24 LTS in windows_
+* _Redis in ubuntu_
+* _Redis insight IDE_
 
 ### Installation 🔧
 
@@ -44,6 +43,12 @@ _Boot Ubuntu on Windows and its redis service_
 
 ```
 sudo service redis-server start
+```
+
+_Consume the post method in the character/init path from Swagger or execute the following CURL_
+
+```
+curl --location --request POST 'http://localhost:4000/character/init'
 ```
 
 _Compile the project and start the server_
