@@ -7,7 +7,7 @@ import NodeCache from 'node-cache';
 import { Origin } from '../models/origin';
 import { Location } from '../models/location';
 import { getAllCharactersByRickAndMorty, getAllCharactersByRickAndMortyGraphQl, getAllEpisodesRickAndMorty, getAllLocationRickAndMorty } from '../services/character';
-import { Episode } from '../models/episode';
+import { Episode, FEpisode, MEpisode } from '../models/episode';
 
 const cache = new NodeCache({ stdTTL: 3600 });
 
@@ -63,8 +63,9 @@ export const getAllCharacters = async (req: any, res: any) => {
 };
 
 export const getCharacterById = async (req: any, res: any) => {
-    const { id } = req.params;
     try {
+        const { id } = req.params;
+
         Character.belongsTo(Origin, { foreignKey: "origin" });
         Origin.hasMany(Character, { foreignKey: "origin" })
         Character.belongsTo(Location, { foreignKey: "location" });
@@ -77,7 +78,7 @@ export const getCharacterById = async (req: any, res: any) => {
         });
 
         if (!character) {
-            res.status(400).json({ msg: "Not found character by ID" });
+            res.status(200).json({ msg: "Not found character by ID" });
             return;
         }
 
@@ -108,17 +109,15 @@ export const getCharacterByName = async (req: any, res: any) => {
 
 export const setInitialCharacterData = async (req: any, res: any) => {
     try {
-        /*
         await Episode.sync({ force: true });
         const responseEpisode = await getAllEpisodesRickAndMorty();
         const episodes: MEpisode[] = responseEpisode.data.results;
         const episodes_: FEpisode[] = [];
         episodes.forEach(element => {
             const episode: FEpisode = {
-                id: element.id,
+                episode: element.id,
                 episodes: element.characters,
             }
-
             episodes_.push(episode)
         });
         await Episode.bulkCreate(episodes_);
@@ -129,8 +128,7 @@ export const setInitialCharacterData = async (req: any, res: any) => {
 
         await Origin.sync({ force: true });
         const responseOrigin = await getAllLocationRickAndMorty();
-        await Origin.bulkCreate(responseOrigin.data.results); 
-        */
+        await Origin.bulkCreate(responseOrigin.data.results);       
 
         await Character.sync({ force: true });
         const response = await getAllCharactersByRickAndMorty();
@@ -161,9 +159,9 @@ export const setInitialCharacterData = async (req: any, res: any) => {
                 image: element.image,
                 url: element.url,
                 created: element.created,
-                episode: modifiedEpisode?.dataValues.episode || 1,
-                origin: modifiedOrigin?.dataValues.origin || 1,
-                location: modifiedLocation?.dataValues.location || 1,
+                episode: modifiedEpisode?.dataValues?.episode?? 1,
+                origin: modifiedOrigin?.dataValues?.origin || 1,
+                location: modifiedLocation?.dataValues?.location || 1,
                 type: element.type
             }
 
