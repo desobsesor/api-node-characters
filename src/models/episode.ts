@@ -6,6 +6,12 @@ export type MEpisode = {
     characters: JSON;
 };
 
+export type FEpisode = {
+    episode: number;
+    episodes: JSON;
+};
+
+
 export class Episode extends Model { }
 
 Episode.init(

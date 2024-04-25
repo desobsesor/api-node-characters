@@ -39,7 +39,7 @@ export const getAllLocationRickAndMorty = async () => {
 };
 
 export const getAllEpisodesRickAndMorty = async () => {
-  const response = await axios.get(`${configAPI.baseURLRickAndMorty}/episode?page=3`);
+  const response = await axios.get(`${configAPI.baseURLRickAndMorty}/episode?page=1`);
   return response;
 };
 

@@ -80,6 +80,38 @@ paths:
                   error:
                     type: string
                     description: Error message.
+  character/init:
+    post:
+      summary: Populates database with initial characters from Rick and Morty API
+      tags:
+          - Characters - REST services
+      responses:
+        '200':
+          description: Characters data loaded successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                    description: Indicates success (true)
+                  status:
+                    type: integer
+                    description: HTTP status code (200)
+                  message:
+                    type: string
+                    description: Success message
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message
   /character/search:
     post:
       summary: Search characters by status, species, gender, and name
