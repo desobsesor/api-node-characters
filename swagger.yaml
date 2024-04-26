@@ -1,4 +1,3 @@
-
 openapi: 3.0.0
 info:
   title: Character API
@@ -26,7 +25,7 @@ paths:
                   type: string
                   description: The string value of the data entry.
       responses:
-        '200':
+        "200":
           description: Successful retrieval of characters.
           content:
             application/json:
@@ -39,7 +38,7 @@ paths:
                       characters:
                         type: array
                         items:
-                          $ref: '#/components/schemas/Character'
+                          $ref: "#/components/schemas/Character"
                   errors:
                     type: array
                     items:
@@ -60,7 +59,7 @@ paths:
                           type: array
                           items:
                             type: string
-        '400':
+        "400":
           description: Bad request.
           content:
             application/json:
@@ -70,7 +69,7 @@ paths:
                   error:
                     type: string
                     description: Error message.
-        '500':
+        "500":
           description: Internal server error.
           content:
             application/json:
@@ -84,9 +83,9 @@ paths:
     post:
       summary: Populates database with initial characters from Rick and Morty API
       tags:
-          - Characters - REST services
+        - Characters - REST services
       responses:
-        '200':
+        "200":
           description: Characters data loaded successfully
           content:
             application/json:
@@ -102,7 +101,7 @@ paths:
                   message:
                     type: string
                     description: Success message
-        '500':
+        "500":
           description: Internal server error
           content:
             application/json:
@@ -118,26 +117,26 @@ paths:
       tags:
         - Characters - REST services
       requestBody:
-          required: true
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  status:
-                    type: string
-                    description: The character's status (e.g., alive, dead, unknown)
-                  species:
-                    type: string
-                    description: The character's species
-                  gender:
-                    type: string
-                    description: The character's gender (e.g., male, female, unknown)
-                  name:
-                    type: string
-                    description: The character's name
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  description: The character's status (e.g., alive, dead, unknown)
+                species:
+                  type: string
+                  description: The character's species
+                gender:
+                  type: string
+                  description: The character's gender (e.g., male, female, unknown)
+                name:
+                  type: string
+                  description: The character's name
       responses:
-        '200':
+        "200":
           description: Successful character search
           content:
             application/json:
@@ -145,7 +144,7 @@ paths:
                 type: array
                 items:
                   type: object
-        '500':
+        "500":
           description: Internal server error
           content:
             application/json:
@@ -162,15 +161,15 @@ paths:
         - Characters - REST services
       description: Retrieves a list of all characters.
       responses:
-        '200':
+        "200":
           description: Successful retrieval of all characters.
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Character'
-        '500':
+                  $ref: "#/components/schemas/Character"
+        "500":
           description: Internal server error.
           content:
             application/json:
@@ -195,7 +194,7 @@ paths:
           schema:
             type: integer
       responses:
-        '200':
+        "200":
           description: Successful retrieval of character
           content:
             application/json:
@@ -208,7 +207,7 @@ paths:
                   name:
                     type: string
                     description: The character's name
-        '500':
+        "500":
           description: Internal server error
           content:
             application/json:
@@ -233,7 +232,7 @@ paths:
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: Successful retrieval of character
           content:
             application/json:
@@ -246,7 +245,7 @@ paths:
                   name:
                     type: string
                     description: The character's name
-        '500':
+        "500":
           description: Internal server error
           content:
             application/json:
@@ -301,7 +300,7 @@ paths:
                   type: string
                   description: The date the character was created (optional)
       responses:
-        '201':
+        "201":
           description: Character created successfully
           content:
             application/json:
@@ -318,7 +317,7 @@ paths:
                     type: string
                     description: Success message
                   # Optionally include the created character details here
-        '500':
+        "500":
           description: Internal server error
           content:
             application/json:
@@ -380,7 +379,7 @@ paths:
                   type: string
                   description: Create user
       responses:
-        '201':
+        "201":
           description: Character information updated successfully
           content:
             application/json:
@@ -396,7 +395,7 @@ paths:
                   message:
                     type: string
                     description: Success message
-                  characterUpdate:  # Include details of the updated character
+                  characterUpdate: # Include details of the updated character
                     type: object
                     # Same properties as /characters POST request body
                     properties:
@@ -427,7 +426,7 @@ paths:
                       url:
                         type: string
                         description: URL of the character's API endpoint (optional)
-        '500':
+        "500":
           description: Internal server error
           content:
             application/json:
@@ -451,7 +450,7 @@ paths:
           schema:
             type: integer
       responses:
-        '200':
+        "200":
           description: Character deleted successfully
           content:
             application/json:
@@ -467,13 +466,13 @@ paths:
                   message:
                     type: string
                     description: Success message
-                  character:  # Include details of the deleted character (optional)
+                  character: # Include details of the deleted character (optional)
                     type: object
                     properties:
                       id:
                         type: integer
                         description: The character's ID
-        '500':
+        "500":
           description: Internal server error
           content:
             application/json:
@@ -519,9 +518,9 @@ components:
           type: string
           description: The date and time the character was created.
         origin:
-          $ref: '#/components/schemas/Origin'
+          $ref: "#/components/schemas/Origin"
         location:
-          $ref: '#/components/schemas/Location'
+          $ref: "#/components/schemas/Location"
     Origin:
       type: object
       properties:

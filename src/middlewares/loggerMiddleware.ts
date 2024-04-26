@@ -1,6 +1,6 @@
-import log4js from 'log4js';
+import log4js from "log4js";
 
-const logger = log4js.getLogger('default');
+const logger = log4js.getLogger("default");
 
 export const loggerMiddleware = (req: any, res: any, next: any) => {
   const timestamp = new Date().toISOString();

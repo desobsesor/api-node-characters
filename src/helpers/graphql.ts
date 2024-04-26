@@ -1,7 +1,7 @@
-import { gql } from 'apollo-server-express';
-import { Character } from '../models/character';
-import { Origin } from '../models/origin';
-import { Location } from '../models/location';
+import { gql } from "apollo-server-express";
+import { Character } from "../models/character";
+import { Origin } from "../models/origin";
+import { Location } from "../models/location";
 //GraphQl
 export const typeDefs = gql`
   type Character {
@@ -40,11 +40,14 @@ export const typeDefs = gql`
 
 export const resolvers = {
   Query: {
-    characters: async (_: any, { status, species, gender, name, origin }: any) => {
+    characters: async (
+      _: any,
+      { status, species, gender, name, origin }: any,
+    ) => {
       Character.belongsTo(Origin, { foreignKey: "origin" });
-      Origin.hasMany(Character, { foreignKey: "origin" })
+      Origin.hasMany(Character, { foreignKey: "origin" });
       Character.belongsTo(Location, { foreignKey: "location" });
-      Location.hasMany(Character, { foreignKey: "location" })
+      Location.hasMany(Character, { foreignKey: "location" });
 
       const characters = await Character.findAll({
         where: {
@@ -54,14 +57,16 @@ export const resolvers = {
           name,
           origin,
         },
-        include: [{
-          model: Origin,
-          attributes: ["name", "url"],
-        },
-        {
-          model: Location,
-          attributes: ["name", "url"],
-        }]
+        include: [
+          {
+            model: Origin,
+            attributes: ["name", "url"],
+          },
+          {
+            model: Location,
+            attributes: ["name", "url"],
+          },
+        ],
       });
 
       return characters;

@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+  <head>
+    <title>README</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- The content below will be included at the end of the <head> element. -->
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        // your code here
+      });
+    </script>
+  </head>
+
+  <body for="html-export">
+    <div class="crossnote markdown-preview">
+      <h1 id="getting-started-with-this-api">Getting Started with this API</h1>
+      <p>
+        This API provides access to a collection of rick and morty characters,
+        allowing users to search, filter, get, and perform basic operations.
+      </p>
+      <p>
+        ========================================================================
+      </p>
+      <h2 id="technologies">Technologies</h2>
+      <p>API - Node-Express-Redis-GraphQl-Sequelize-MySql-Swagger</p>
+      <h2 id="starting--">Starting 🚀</h2>
+      <p>
+        <em
+          >These instructions will allow you to get a copy of the project
+          running on the local machine for development and testing purposes.</em
+        >
+      </p>
+      <p>See <strong>Deployment</strong> to learn how to deploy the project.</p>
+      <h3 id="pre--requirements-">Pre- requirements 📋</h3>
+      <ul>
+        <li><em>NodeJS</em></li>
+        <li><em>MySql</em></li>
+        <li><em>Ubuntu 24 LTS in windows</em></li>
+        <li><em>Redis in ubuntu</em></li>
+        <li><em>Redis insight IDE</em></li>
+      </ul>
+      <h5 id="recommended--">Recommended 📋</h5>
+      <ul>
+        <li><em>WorkBench</em></li>
+        <li><em>Redis insight</em></li>
+        <li><em>Hyper</em></li>
+        <li><em>vscode</em></li>
+        <li><em>postman</em></li>
+      </ul>
+      <h3 id="installation-">Installation 🔧</h3>
+      <p>
+        <strong
+          >To install the project locally and run the api please execute the
+          following steps</strong
+        >
+      </p>
+      <p><em>Clone the api-node-characters repository from github</em></p>
+      <pre
+        data-role="codeBlock"
+        data-info=""
+        class="language-text"
+      ><code>git clone https://github.com/desobsesor/api-node-characters.git
+</code></pre>
+      <p><em>Install the dependencies</em></p>
+      <pre data-role="codeBlock" data-info="" class="language-text"><code>npm i
+</code></pre>
+      <p><em>Boot Ubuntu on Windows and its redis service</em></p>
+      <pre
+        data-role="codeBlock"
+        data-info=""
+        class="language-text"
+      ><code>sudo service redis-server start
+</code></pre>
+      <p>
+        <em
+          >Consume the post method in the character/init path from Swagger or
+          execute the following CURL</em
+        >
+      </p>
+      <pre
+        data-role="codeBlock"
+        data-info=""
+        class="language-text"
+      ><code>curl --location --request POST 'http://localhost:4000/character/init'
+</code></pre>
+      <p><em>Compile the project and start the server</em></p>
+      <pre
+        data-role="codeBlock"
+        data-info=""
+        class="language-text"
+      ><code>npm run start-dev
+</code></pre>
+      <p><em>Invoke the service status endpoint</em></p>
+      <pre
+        data-role="codeBlock"
+        data-info=""
+        class="language-text"
+      ><code>http://localhost:4000
+</code></pre>
+      <h2 id="swagger-">Swagger 📦</h2>
+      <p><em>Invoke the API documentation endpoint</em></p>
+      <pre
+        data-role="codeBlock"
+        data-info=""
+        class="language-text"
+      ><code>http://localhost:4000/api-docs
+</code></pre>
+      <h2 id="running-the-tests-️">Running the tests ⚙️</h2>
+      <p><em>Run to start unit tests</em></p>
+      <pre
+        data-role="codeBlock"
+        data-info=""
+        class="language-text"
+      ><code>npm run test
+</code></pre>
+      <h2 id="deployment-">Deployment 📦</h2>
+      <p><em>Compile the project and build the application sources</em></p>
+      <pre
+        data-role="codeBlock"
+        data-info=""
+        class="language-text"
+      ><code>npm run compile
+</code></pre>
+      <h2 id="built-with-️">Built with 🛠️</h2>
+      <p><em>Tools and Technologies used</em></p>
+      <ul>
+        <li>
+          <a href="https://nodejs.org/en/">Nodejs</a> - Server-side JavaScript
+          environment,uses an asynchronous and event-driven model
+        </li>
+        <li>
+          <a href="https://expressjs.com/">Express</a> - Fast, unopinionated,
+          minimalist web framework
+        </li>
+        <li><a href="https://www.npmjs.com/">Npm</a> - Dependency manager</li>
+        <li><a href="https://www.mysql.com/">MySQL</a> -Database engine</li>
+        <li>
+          <a href="https://www.secuelize.org/">Sequelize</a> - ORM for databases
+        </li>
+        <li><a href="https://redis.io/">Redis</a> - Cache service - KVS</li>
+        <li>
+          <a href="https://graphql.org">GraphQl</a> - A query language for your
+          API
+        </li>
+        <li>
+          <a href="https://swagger.io/">Swagger</a> -Swagger is an open
+          specification for defining APIs
+        </li>
+      </ul>
+      <h2 id="contributing-️">Contributing 🖇️</h2>
+      <p>Contributions are currently not allowed.</p>
+      <h2 id="versioned-">Versioned 📌</h2>
+      <p>
+        <a href="http://semver.org/">SemVer</a> is used for versioning. For all
+        versions available.
+      </p>
+      <h2 id="authors-️">Authors ✒️</h2>
+      <p><em>Built by</em></p>
+      <ul>
+        <li>
+          <strong>Yovany Suárez Silva</strong> -
+          <em>Senior FullStack Developer</em> -
+          <a href="https://github.com/desobsesor">desobsesor</a>
+        </li>
+      </ul>
+      <h2 id="license-">License 📄</h2>
+      <p>
+        This project is under the MIT License - see the file
+        <a href="LICENSE.md">LICENSE.md</a> for details
+      </p>
+      <h2 id="expressions-of-gratitude-">Expressions of Gratitude 🎁</h2>
+      <p>
+        ⌨️ con ❤️ por <a href="https://github.com/desobsesor">desobsesor</a> 😊
+      </p>
+    </div>
+  </body>
+</html>
