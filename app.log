@@ -19518,3 +19518,49 @@
 [2024-04-25T22:51:33.066] [INFO] default - Body: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args(includeDeprecated: true) {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args(includeDeprecated: true) {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields(includeDeprecated: true) {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      isDeprecated\n      deprecationReason\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ","operationName":"IntrospectionQuery"}
 [2024-04-25T22:52:38.456] [INFO] default - [2024-04-26T03:52:38.456Z] POST /graphql
 [2024-04-25T22:52:38.457] [INFO] default - Body: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args(includeDeprecated: true) {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args(includeDeprecated: true) {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields(includeDeprecated: true) {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      isDeprecated\n      deprecationReason\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ","operationName":"IntrospectionQuery"}
+[2024-04-26T00:14:43.434] [INFO] default - [2024-04-26T05:14:43.433Z] GET /api-docs/
+[2024-04-26T00:14:43.437] [INFO] default - Body: {}
+[2024-04-26T00:14:43.622] [INFO] default - [2024-04-26T05:14:43.622Z] GET /api-docs/swagger-ui.css
+[2024-04-26T00:14:43.623] [INFO] default - Body: {}
+[2024-04-26T00:14:43.626] [INFO] default - [2024-04-26T05:14:43.626Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-26T00:14:43.627] [INFO] default - Body: {}
+[2024-04-26T00:14:43.631] [INFO] default - [2024-04-26T05:14:43.631Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-26T00:14:43.632] [INFO] default - Body: {}
+[2024-04-26T00:14:43.634] [INFO] default - [2024-04-26T05:14:43.634Z] GET /api-docs/swagger-ui-init.js
+[2024-04-26T00:14:43.635] [INFO] default - Body: {}
+[2024-04-26T00:17:27.513] [INFO] default - [2024-04-26T05:17:27.513Z] GET /api-docs/
+[2024-04-26T00:17:27.514] [INFO] default - Body: {}
+[2024-04-26T00:17:27.582] [INFO] default - [2024-04-26T05:17:27.582Z] GET /api-docs/swagger-ui.css
+[2024-04-26T00:17:27.583] [INFO] default - Body: {}
+[2024-04-26T00:17:27.585] [INFO] default - [2024-04-26T05:17:27.585Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-26T00:17:27.586] [INFO] default - Body: {}
+[2024-04-26T00:17:27.588] [INFO] default - [2024-04-26T05:17:27.588Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-26T00:17:27.589] [INFO] default - Body: {}
+[2024-04-26T00:17:27.590] [INFO] default - [2024-04-26T05:17:27.590Z] GET /api-docs/swagger-ui-init.js
+[2024-04-26T00:17:27.591] [INFO] default - Body: {}
+[2024-04-26T00:20:54.939] [INFO] default - [2024-04-26T05:20:54.939Z] GET /ERD.jpg
+[2024-04-26T00:20:54.942] [INFO] default - Body: {}
+[2024-04-26T00:22:13.461] [INFO] default - [2024-04-26T05:22:13.461Z] GET /ERD.jpg
+[2024-04-26T00:22:13.480] [INFO] default - Body: {}
+[2024-04-26T00:22:58.827] [INFO] default - [2024-04-26T05:22:58.827Z] GET /ERD.jpg
+[2024-04-26T00:22:58.831] [INFO] default - Body: {}
+[2024-04-26T00:24:30.370] [INFO] default - [2024-04-26T05:24:30.370Z] GET /api-docs/
+[2024-04-26T00:24:30.371] [INFO] default - Body: {}
+[2024-04-26T00:24:30.420] [INFO] default - [2024-04-26T05:24:30.420Z] GET /api-docs/swagger-ui.css
+[2024-04-26T00:24:30.420] [INFO] default - Body: {}
+[2024-04-26T00:24:30.421] [INFO] default - [2024-04-26T05:24:30.421Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-26T00:24:30.421] [INFO] default - Body: {}
+[2024-04-26T00:24:30.422] [INFO] default - [2024-04-26T05:24:30.422Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-26T00:24:30.423] [INFO] default - Body: {}
+[2024-04-26T00:24:30.424] [INFO] default - [2024-04-26T05:24:30.424Z] GET /api-docs/swagger-ui-init.js
+[2024-04-26T00:24:30.425] [INFO] default - Body: {}
+[2024-04-26T00:24:51.016] [INFO] default - [2024-04-26T05:24:51.016Z] GET /api-docs/
+[2024-04-26T00:24:51.016] [INFO] default - Body: {}
+[2024-04-26T00:24:51.148] [INFO] default - [2024-04-26T05:24:51.148Z] GET /api-docs/swagger-ui.css
+[2024-04-26T00:24:51.150] [INFO] default - Body: {}
+[2024-04-26T00:24:51.151] [INFO] default - [2024-04-26T05:24:51.151Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-26T00:24:51.152] [INFO] default - Body: {}
+[2024-04-26T00:24:51.156] [INFO] default - [2024-04-26T05:24:51.156Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-26T00:24:51.157] [INFO] default - Body: {}
+[2024-04-26T00:24:51.159] [INFO] default - [2024-04-26T05:24:51.159Z] GET /api-docs/swagger-ui-init.js
+[2024-04-26T00:24:51.160] [INFO] default - Body: {}

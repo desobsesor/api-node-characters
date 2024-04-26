@@ -5,7 +5,6 @@ import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
 import pluginJs from "@eslint/js";
 
-// mimic CommonJS variables -- not needed if using CommonJS
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({
@@ -15,19 +14,15 @@ const compat = new FlatCompat({
 
 export default [
   {
-    plugins: {
-      // You’d typically use one of the following two:
-      // typescriptEslint: typescriptEslint,
-      // typescriptEslint,
-      // But in this example we give it another name.
-      // It might be tempting to use something shorter like “ts”:
-      ts: typescriptEslint, // 🚨 Don’t do this!
-    },
+    extends: [
+      "eslint:recommended",
+      "plugin:typescript/@typescript-eslint",
+      "prettier",
+    ],
+    parser: "@typescript-eslint/parser",
+    plugins: ["@typescript-eslint"],
     rules: {
-      // With eslintrc, this is _always_ called:
-      // @typescript-eslint/indent
-      // But in eslint.config.js (flat config), the name chosen above in `plugins` is used.
-      "ts/indent": "error", // 🚨 Don’t do this!
+      "ts/indent": "error",
     },
     languageOptions: { globals: globals.browser },
   },
@@ -35,15 +30,51 @@ export default [
   someConfig,
   {
     files: ["src/**/*.js"],
-    ignores: ["**/*.config.js", "!**/eslint.config.js"],
+    ignores: [
+      "build/**/*",
+      "!build/**/*/",
+      "!build/**/test.js",
+      "!node_modules/",
+      "node_modules/*",
+      "**/*.config.js",
+      "!**/eslint.config.js",
+    ],
     rules: {
+      // General ESLint rules
       indent: "error",
-      semi: "error",
       "prefer-const": ["error", { ignoreReadBeforeAssign: true }],
       "no-unused-vars": "error",
       "no-undef": "error",
       camelcase: ["error", { ignoreDestructuring: true }],
       "no-empty": ["error", { allowEmptyCatch: true }],
+      "no-console": "warn",
+      "no-var": "error",
+      "arrow-body-style": ["error", "always"],
+      "comma-dangle": ["error", "never"],
+      "quote-props": ["error", "consistent"],
+      "max-lines": ["error", { max: 3, skipBlankLines: true }],
+      "max-lines-per-function": [
+        "error",
+        { max: 10, skipBlankLines: true, skipComments: true },
+      ],
+      "no-inline-comments": [
+        "error",
+        { ignorePattern: "webpackChunkName:\\s.+" },
+      ],
+      // TypeScript-specific rules
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/no-empty-function": "warn",
+      "@typescript-eslint/no-explicit-any": "warn",
+      "@typescript-eslint/no-non-null-assertion": "warn",
+      "@typescript-eslint/no-var-requires": "error",
+      "@typescript-eslint/prefer-interface": "warn",
+      "@typescript-eslint/explicit-function-returns": "warn",
+      "@typescript-eslint/no-parameter-reassignment": "warn",
+      "@typescript-eslint/no-misused-new": "error",
+      "@typescript-eslint/no-shadow": "error",
+      "@typescript-eslint/no-use-before-define": "error",
+      // Prettier integration
+      "prettier/prettier": "error",
     },
   },
   eslintConfigPrettier,
