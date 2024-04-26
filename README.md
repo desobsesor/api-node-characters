@@ -70,6 +70,10 @@ _Invoke the service status endpoint_
 http://localhost:4000
 ```
 
+## Entity relationship diagram 📦
+
+[![ERD](views/assets/imgs/ERD.jpg)](https://ejemplo.com)
+
 ## Swagger 📦
 
 _Invoke the API documentation endpoint_
