@@ -8,6 +8,17 @@ This API provides access to a collection of rick and morty characters, allowing 
 
 API - Node-Express-Redis-GraphQl-Sequelize-MySql-Swagger
 
+## Other settings in the project
+
+|    <!-- -->     |  <!-- -->  |    <!-- -->     |
+| :-------------: | :--------: | :-------------: |
+|   _tsconfig_    | _prettier_ | _jsonwebtoken_  |
+|    _eslint_     |   _ejs_    |     _cron_      |
+|      _git_      |  _log4js_  |     _axios_     |
+|  _pre-commit_   |   _jest_   | _apollo server_ |
+|  _node cache_   |   _yaml_   |     _husky_     |
+| _migration orm_ |            |  _typescript_   |
+
 ## Starting 🚀
 
 _These instructions will allow you to get a copy of the project running on the local machine for development and testing purposes._
@@ -18,17 +29,17 @@ See **Deployment** to learn how to deploy the project.
 
 - _NodeJS_
 - _MySql_
-- _Ubuntu 24 LTS in windows_
-- _Redis in ubuntu_
-- _Redis insight IDE_
+- _Ubuntu 24 LTS in Windows_
+- _Redis in Ubuntu_
+- _Redis Insight IDE_
 
 ##### Recommended 📋
 
 - _WorkBench_
-- _Redis insight_
+- _Redis Insight_
 - _Hyper_
-- _vscode_
-- _postman_
+- _VsCode_
+- _Postman_
 
 ### Installation 🔧
 
@@ -72,7 +83,7 @@ http://localhost:4000
 
 ## Entity relationship diagram 📦
 
-[![ERD](views/assets/imgs/ERD.jpg)](https://ejemplo.com)
+[![ERD](views/assets/imgs/ERD.jpg)](views/assets/imgs/ERD.jpg)
 
 ## Swagger 📦
 
