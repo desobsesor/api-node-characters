@@ -7,7 +7,8 @@
     "compile": "tsc",
     "start": "npm run compile && node ./build/src/index.js",
     "start-dev": "npm run compile && node ./build/src/index.js",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky"
   },
   "author": "Yovany Suárez Silva",
   "engines": {
@@ -25,6 +26,9 @@
     "test": "tests"
   },
   "license": "ISC",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
   "dependencies": {
     "@apollo/server": "^4.10.3",
     "@testing-library/jest-dom": "^6.4.2",
@@ -33,6 +37,7 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "cron": "^3.1.7",
+    "ejs": "^3.1.10",
     "express": "^4.19.1",
     "fs": "^0.0.1-security",
     "graphql": "^16.8.1",
@@ -41,6 +46,7 @@
     "log4js": "^6.9.1",
     "mysql2": "^3.9.6",
     "node-cache": "^5.1.2",
+    "node-cron": "^3.0.3",
     "redis": "^4.6.13",
     "redis-mock": "^0.56.3",
     "sequelize": "^6.37.3",
@@ -49,12 +55,26 @@
     "yaml": "^2.4.1"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^9.1.1",
     "@types/express": "^4.17.21",
     "@types/jest": "^29.5.12",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/node": "^20.12.7",
+    "@types/node-cron": "^3.0.11",
     "@types/redis-mock": "^0.17.3",
     "@types/swagger-ui-express": "^4.1.6",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "globals": "^15.0.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5",
     "ts-jest": "^29.1.2",
     "tslint": "^5.20.1",
     "typescript": "^5.4.5"

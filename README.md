@@ -3,29 +3,36 @@
 This API provides access to a collection of rick and morty characters, allowing users to search, filter, get, and perform basic operations.
 
 ========================================================================
+
 ## Technologies
 
 API - Node-Express-Redis-GraphQl-Sequelize-MySql-Swagger
 
-
-## Starting  🚀
+## Starting 🚀
 
 _These instructions will allow you to get a copy of the project running on the local machine for development and testing purposes._
 
 See **Deployment** to learn how to deploy the project.
 
-
 ### Pre- requirements 📋
 
-* _NodeJS_
-* _MySql_
-* _Ubuntu 24 LTS in windows_
-* _Redis in ubuntu_
-* _Redis insight IDE_
+- _NodeJS_
+- _MySql_
+- _Ubuntu 24 LTS in windows_
+- _Redis in ubuntu_
+- _Redis insight IDE_
+
+##### Recommended 📋
+
+- _WorkBench_
+- _Redis insight_
+- _Hyper_
+- _vscode_
+- _postman_
 
 ### Installation 🔧
 
-__To install the project locally and run the api please execute the following steps__
+**To install the project locally and run the api please execute the following steps**
 
 _Clone the api-node-characters repository from github_
 
@@ -91,13 +98,14 @@ npm run compile
 
 _Tools and Technologies used_
 
-* [Nodejs](https://nodejs.org/en/) - Server-side JavaScript environment, uses an asynchronous and event-driven model.
-* [Npm](https://www.npmjs.com/) - Dependency manager
-* [MySQL](https://www.mysql.com/) -Database engine
-* [Sequelize](https://www.secuelize.org/) - ORM for databases
-* [Redis](https://redis.io/) - Cache service - KVS
-* [GraphQl](https://graphql.org) - A query language for your API
-* [Swagger](https://swagger.io/) -Swagger is an open specification for defining APIs
+- [Nodejs](https://nodejs.org/en/) - Server-side JavaScript environment,uses an asynchronous and event-driven model
+- [Express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework
+- [Npm](https://www.npmjs.com/) - Dependency manager
+- [MySQL](https://www.mysql.com/) -Database engine
+- [Sequelize](https://www.secuelize.org/) - ORM for databases
+- [Redis](https://redis.io/) - Cache service - KVS
+- [GraphQl](https://graphql.org) - A query language for your API
+- [Swagger](https://swagger.io/) -Swagger is an open specification for defining APIs
 
 ## Contributing 🖇️
 
@@ -111,7 +119,7 @@ Contributions are currently not allowed.
 
 _Built by_
 
-* **Yovany Suárez Silva** - *Senior FullStack Developer* - [desobsesor](https://github.com/desobsesor)
+- **Yovany Suárez Silva** - _Senior FullStack Developer_ - [desobsesor](https://github.com/desobsesor)
 
 ## License 📄
 

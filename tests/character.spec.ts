@@ -1,21 +1,23 @@
+import { Character } from "../src/models/character";
+import {
+  getCharacterById,
+  setCharacter,
+  updateCharacter,
+} from "../src/controllers/character";
+import { mockResponse } from "./mockResponse";
+import NodeCache from "node-cache";
+import { createClient } from "redis-mock";
 
-import { Character } from '../src/models/character';
-import { getCharacterById, setCharacter, updateCharacter } from '../src/controllers/character';
-import { mockResponse } from './mockResponse';
-import NodeCache from 'node-cache';
-import { createClient } from 'redis-mock';
+jest.mock("node-cache");
+jest.mock("../src/models/character");
 
-jest.mock('node-cache');
-jest.mock('../src/models/character');
-
-describe('Characters', () => {
+describe("Characters", () => {
   beforeEach(() => {
     jest.clearAllMocks();
-    jest.mock('redis', () => createClient());
-    
+    jest.mock("redis", () => createClient());
   });
 
-  it('should return a character with status 200', async () => {
+  it("should return a character with status 200", async () => {
     const mockId = 21;
     const mockCharacter = {
       id: 21,
@@ -30,7 +32,7 @@ describe('Characters', () => {
       url: "https://rickandmortyapi.com/api/character/21",
       created: "2017-11-04T22:39:48.055Z",
       createdAt: "2024-04-24T21:19:37.000Z",
-      updatedAt: "2024-04-24T21:19:37.000Z"
+      updatedAt: "2024-04-24T21:19:37.000Z",
     };
 
     (Character.findByPk as jest.Mock).mockResolvedValue(mockCharacter);
@@ -44,9 +46,9 @@ describe('Characters', () => {
     expect(res.json).toHaveBeenCalledWith(mockCharacter);
   });
 
-  it('should handle errors and return status 500', async () => {
+  it("should handle errors and return status 500", async () => {
     const mockId = 1;
-    const mockError = new Error('Error finding character');
+    const mockError = new Error("Error finding character");
 
     (Character.findByPk as jest.Mock).mockRejectedValueOnce(mockError);
 
@@ -56,12 +58,14 @@ describe('Characters', () => {
     await getCharacterById(req, res);
 
     expect(res.status).toBe(500);
-    expect(res.json).toHaveBeenCalledWith({ error: 'Error when searching character by ID' });
+    expect(res.json).toHaveBeenCalledWith({
+      error: "Error when searching character by ID",
+    });
   });
 
-  it('should create a character and return a 201 status', async () => {
+  it("should create a character and return a 201 status", async () => {
     const mockCharacterData = {
-      name: 'Selena',
+      name: "Selena",
       status: "Inactive",
       species: "Human",
       gender: "Female",
@@ -70,7 +74,7 @@ describe('Characters', () => {
       image: "image",
       episode: "1,2",
       url: "http://www.midominio.com",
-      created: "Yovany"
+      created: "Yovany",
     };
 
     (Character.sync as jest.Mock).mockReturnValue(undefined);
@@ -88,12 +92,12 @@ describe('Characters', () => {
     expect(res.json).toHaveBeenCalledWith({
       ok: true,
       status: 201,
-      message: 'Character add to DB',
+      message: "Character add to DB",
     });
   });
 
-  it('should handle errors and return status 500', async () => {
-    const mockError = new Error('Error creating character');
+  it("should handle errors and return status 500", async () => {
+    const mockError = new Error("Error creating character");
 
     (Character.sync as jest.Mock).mockResolvedValue(undefined);
 
@@ -107,7 +111,9 @@ describe('Characters', () => {
     expect(Character.sync).toHaveBeenCalled();
     expect(Character.create).toHaveBeenCalled();
     expect(res.status).toBe(500);
-    expect(res.json).toHaveBeenCalledWith({ error: 'Error when querying characters' });
+    expect(res.json).toHaveBeenCalledWith({
+      error: "Error when querying characters",
+    });
   });
 
   /*
@@ -147,10 +153,10 @@ describe('Characters', () => {
     }); // Verify response body
   }); */
 
-  it('should raise errorer and return status 500 when unable to make a change to the character', async () => {
+  it("should raise errorer and return status 500 when unable to make a change to the character", async () => {
     const mockId = 1;
     const mockCharacterData = {
-      name: 'Pato',
+      name: "Pato",
       status: "Inactive",
       species: "Human",
       gender: "Female",
@@ -159,9 +165,9 @@ describe('Characters', () => {
       image: "image",
       episode: "1,2",
       url: "http://www.midominio.com",
-      created: "Yovany"
+      created: "Yovany",
     };
-    const mockError = new Error('Error updating character');
+    const mockError = new Error("Error updating character");
 
     (Character.update as jest.Mock).mockRejectedValue(mockError);
 
@@ -173,23 +179,25 @@ describe('Characters', () => {
     expect(Character.update).toHaveBeenCalled();
     expect(NodeCache.prototype.set).not.toHaveBeenCalled();
     expect(res.status).toBe(500);
-    expect(res.json).toHaveBeenCalledWith({ error: 'Error when updating characters' });
+    expect(res.json).toHaveBeenCalledWith({
+      error: "Error when updating characters",
+    });
   });
-/*
-  it('should set and get a value from the cache', async () => {
-    const key = 'my-key';
-    const value = 'some-value';
 
-    await cacheService.set(key, value);
+  it("should set and get a value from the cache", async () => {
+    const key = "my-key";
+    const value = "some-value";
 
-    const cachedValue = await cacheService.get(key);
+    await NodeCache.prototype.set(key, value);
+
+    const cachedValue = await NodeCache.prototype.get(key);
     expect(cachedValue).toEqual(value);
   });
 
-  it('should return null if the key does not exist', async () => {
-    const key = 'non-existent-key';
+  it("should return null if the key does not exist", async () => {
+    const key = "non-existent-key";
 
-    const cachedValue = await cacheService.get(key);
+    const cachedValue = await NodeCache.prototype.get(key);
     expect(cachedValue).toBeNull();
-  });*/
+  });
 });
