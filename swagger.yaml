@@ -79,7 +79,7 @@ paths:
                   error:
                     type: string
                     description: Error message.
-  character/init:
+  /character/init:
     post:
       summary: Populates database with initial characters from Rick and Morty API
       tags:
@@ -524,6 +524,9 @@ components:
     Origin:
       type: object
       properties:
+        origin:
+          type: integer
+          description: The id of the character's origin.
         name:
           type: string
           description: The name of the character's origin.
@@ -533,9 +536,21 @@ components:
     Location:
       type: object
       properties:
+        location:
+          type: integer
+          description: The id of the character's location.
         name:
           type: string
           description: The name of the character's location.
         url:
           type: string
           description: The URL for the location API resource.
+    Episode:
+      type: object
+      properties:
+        episode:
+          type: integer
+          description: The id of the episode.
+        episodes:
+          type: string
+          description: Episodes API resource.

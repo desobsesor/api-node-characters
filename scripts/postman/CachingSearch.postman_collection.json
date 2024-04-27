@@ -1,0 +1,508 @@
+{
+  "info": {
+    "_postman_id": "fabca1ba-5ccf-455c-9ae5-fe1c353bf928",
+    "name": "CachingSearch",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5627791"
+  },
+  "item": [
+    {
+      "name": "Search characters based on a graphql query",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "{\r\n  characters(status: \"Alive\", species: \"Alien\", gender: \"Female\", name: \"Arthricia\", origin: \"9\") {\r\n    id\r\n    name\r\n    status\r\n    species\r\n    gender\r\n    image\r\n    url\r\n  }\r\n}",
+            "variables": ""
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/graphql",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["graphql"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search characters based on a graphql query in API Rick and Morty",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "{\r\n  characters(page: 2, filter: { status: \"Alive\", species: \"Human\" }) {\r\n    info {\r\n      count\r\n    }\r\n    results {\r\n      name\r\n    }\r\n  }\r\n  location(id: 1) {\r\n    id\r\n  }\r\n  episodesByIds(ids: [1, 2]) {\r\n    id\r\n  }\r\n}",
+            "variables": ""
+          }
+        },
+        "url": {
+          "raw": "https://rickandmortyapi.com/graphql",
+          "protocol": "https",
+          "host": ["rickandmortyapi", "com"],
+          "path": ["graphql"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Populate initial data in BD",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/character/init",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["character", "init"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search all characters in API Rick and Morty",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://rickandmortyapi.com/api/character",
+          "protocol": "https",
+          "host": ["rickandmortyapi", "com"],
+          "path": ["api", "character"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search all characters",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+          },
+          {
+            "key": "Accept-Language",
+            "value": "es,es-ES;q=0.9,la;q=0.8,en;q=0.7"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0"
+          },
+          {
+            "key": "Connection",
+            "value": "keep-alive"
+          },
+          {
+            "key": "If-None-Match",
+            "value": "W/\"4bb6-3lxttqnH/5SVRgaL/+CTwU41d/0\""
+          },
+          {
+            "key": "Sec-Fetch-Dest",
+            "value": "document"
+          },
+          {
+            "key": "Sec-Fetch-Mode",
+            "value": "navigate"
+          },
+          {
+            "key": "Sec-Fetch-Site",
+            "value": "none"
+          },
+          {
+            "key": "Sec-Fetch-User",
+            "value": "?1"
+          },
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:4000/character/all",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["character", "all"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Character search with filter",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+          },
+          {
+            "key": "Accept-Language",
+            "value": "es,es-ES;q=0.9,la;q=0.8,en;q=0.7"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0"
+          },
+          {
+            "key": "Connection",
+            "value": "keep-alive"
+          },
+          {
+            "key": "If-None-Match",
+            "value": "W/\"4bb6-3lxttqnH/5SVRgaL/+CTwU41d/0\""
+          },
+          {
+            "key": "Sec-Fetch-Dest",
+            "value": "document"
+          },
+          {
+            "key": "Sec-Fetch-Mode",
+            "value": "navigate"
+          },
+          {
+            "key": "Sec-Fetch-Site",
+            "value": "none"
+          },
+          {
+            "key": "Sec-Fetch-User",
+            "value": "?1"
+          },
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "{\r\n    characters(page: 2, filter: { status: \"Alive\", species: \"Human\" }) {\r\n    info {\r\n      count\r\n    }\r\n    results {\r\n      name\r\n    }\r\n  }\r\n  location(id: 1) {\r\n    id\r\n  }\r\n  episodesByIds(ids: [1, 2]) {\r\n    id\r\n  }\r\n}",
+            "variables": ""
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/character/search?status=Alive&species=Alien&gender=Male&name=Arthricia",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["character", "search"],
+          "query": [
+            {
+              "key": "status",
+              "value": "Alive"
+            },
+            {
+              "key": "species",
+              "value": "Alien"
+            },
+            {
+              "key": "gender",
+              "value": "Male"
+            },
+            {
+              "key": "name",
+              "value": "Arthricia"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search character by id",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+          },
+          {
+            "key": "Accept-Language",
+            "value": "es,es-ES;q=0.9,la;q=0.8,en;q=0.7"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0"
+          },
+          {
+            "key": "Connection",
+            "value": "keep-alive"
+          },
+          {
+            "key": "If-None-Match",
+            "value": "W/\"4bb6-3lxttqnH/5SVRgaL/+CTwU41d/0\""
+          },
+          {
+            "key": "Sec-Fetch-Dest",
+            "value": "document"
+          },
+          {
+            "key": "Sec-Fetch-Mode",
+            "value": "navigate"
+          },
+          {
+            "key": "Sec-Fetch-Site",
+            "value": "none"
+          },
+          {
+            "key": "Sec-Fetch-User",
+            "value": "?1"
+          },
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:4000/character/id/21",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["character", "id", "21"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search character by name",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+          },
+          {
+            "key": "Accept-Language",
+            "value": "es,es-ES;q=0.9,la;q=0.8,en;q=0.7"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0"
+          },
+          {
+            "key": "Connection",
+            "value": "keep-alive"
+          },
+          {
+            "key": "If-None-Match",
+            "value": "W/\"4bb6-3lxttqnH/5SVRgaL/+CTwU41d/0\""
+          },
+          {
+            "key": "Sec-Fetch-Dest",
+            "value": "document"
+          },
+          {
+            "key": "Sec-Fetch-Mode",
+            "value": "navigate"
+          },
+          {
+            "key": "Sec-Fetch-Site",
+            "value": "none"
+          },
+          {
+            "key": "Sec-Fetch-User",
+            "value": "?1"
+          },
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:4000/character/name/Pato",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["character", "name", "Pato"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create character",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Maya\",\r\n    \"status\": \"Alive\",\r\n    \"species\": \"Human\",\r\n    \"gender\": \"Male\",\r\n    \"origin\": 1,\r\n    \"location\": 3,\r\n    \"image\": null,\r\n    \"episode\": 1,\r\n    \"url\": \"https://rickandmortyapi.com/api/character/avatar/2.jpeg\",\r\n    \"created\": \"2017-11-04T18:48:46.250Z\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/character",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["character"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update character by id",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Pato\",\n    \"status\": \"Inactive\",\n    \"species\": \"Human\",\n    \"gender\": \"Female\",\n    \"origin\": 1,\n    \"location\": 3,\n    \"image\": \"images\",\n    \"episode\": 1,\n    \"url\": \"http://www.midominio.com\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4000/character/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["character", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete character by id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:4000/character/19",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["character", "19"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search all episodes in API Rick and Morty",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://rickandmortyapi.com/api/episode",
+          "protocol": "https",
+          "host": ["rickandmortyapi", "com"],
+          "path": ["api", "episode"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
