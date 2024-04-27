@@ -291,8 +291,8 @@ paths:
                   type: string
                   description: URL of the character's image (optional)
                 episode:
-                  type: array
-                  description: Array of episode URLs where the character appears (optional)
+                  type: integer
+                  description: The episodes URLs where the character appears (optional)
                 url:
                   type: string
                   description: URL of the character's API endpoint (optional)
@@ -316,7 +316,6 @@ paths:
                   message:
                     type: string
                     description: Success message
-                  # Optionally include the created character details here
         "500":
           description: Internal server error
           content:
@@ -346,7 +345,6 @@ paths:
           application/json:
             schema:
               type: object
-              # Same properties as /characters POST request body
               properties:
                 status:
                   type: string
@@ -395,9 +393,8 @@ paths:
                   message:
                     type: string
                     description: Success message
-                  characterUpdate: # Include details of the updated character
+                  characterUpdate:
                     type: object
-                    # Same properties as /characters POST request body
                     properties:
                       status:
                         type: string
@@ -466,7 +463,7 @@ paths:
                   message:
                     type: string
                     description: Success message
-                  character: # Include details of the deleted character (optional)
+                  character:
                     type: object
                     properties:
                       id:
@@ -503,24 +500,21 @@ components:
         gender:
           type: string
           description: The gender of the character.
+        origin:
+          $ref: "#/components/schemas/Origin"
+        location:
+          $ref: "#/components/schemas/Location"
         image:
           type: string
           description: The URL of the character's image.
         episode:
-          type: array
-          description: A list of URLs for episodes in which the character appears.
-          items:
-            type: string
+          $ref: "#/components/schemas/Episode"
         url:
           type: string
           description: The URL for the character API resource.
         created:
           type: string
           description: The date and time the character was created.
-        origin:
-          $ref: "#/components/schemas/Origin"
-        location:
-          $ref: "#/components/schemas/Location"
     Origin:
       type: object
       properties:

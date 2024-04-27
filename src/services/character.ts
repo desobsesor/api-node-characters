@@ -6,7 +6,7 @@ function isProductionEnvironment(env: string): env is "production" {
   return env === "production";
 }
 
-const environment: string = process.env.NODE_ENV || "development";
+const environment: string = process.env.NODE_ENV ?? "development";
 
 const configAPI = {
   baseURL: isProductionEnvironment(environment)
