@@ -30,7 +30,7 @@ const query = `
 
 export const getAllCharactersByRickAndMorty = async () => {
   const response = await axios.get(
-    `${configAPI.baseURLRickAndMorty}/character?page=2`,
+    `${configAPI.baseURLRickAndMorty}/character?page=1`,
   );
   return response;
 };

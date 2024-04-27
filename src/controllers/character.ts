@@ -7,7 +7,6 @@ import { Origin } from "../models/origin";
 import { Location } from "../models/location";
 import {
   getAllCharactersByRickAndMorty,
-  getAllCharactersByRickAndMortyGraphQl,
   getAllEpisodesRickAndMorty,
   getAllLocationRickAndMorty,
 } from "../services/character";

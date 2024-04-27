@@ -14,11 +14,7 @@ const compat = new FlatCompat({
 
 export default [
   {
-    extends: [
-      "eslint:recommended",
-      "plugin:typescript/@typescript-eslint",
-      "prettier",
-    ],
+    extends: ["prettier"],
     parser: "@typescript-eslint/parser",
     plugins: ["@typescript-eslint"],
     rules: {
@@ -33,11 +29,12 @@ export default [
     ignores: [
       "build/**/*",
       "!build/**/*/",
-      "!build/**/test.js",
+      "!build/**/test.ts",
       "!node_modules/",
       "node_modules/*",
-      "**/*.config.js",
-      "!**/eslint.config.js",
+      "**/*.config.ts",
+      "!**/eslint.config.ts",
+      "!**/jest.config.ts",
     ],
     rules: {
       // General ESLint rules
