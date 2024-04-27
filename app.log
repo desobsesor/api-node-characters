@@ -19638,3 +19638,47 @@
 [2024-04-26T23:41:26.027] [INFO] default - Body: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}
 [2024-04-26T23:41:27.911] [INFO] default - [2024-04-27T04:41:27.911Z] POST /graphql
 [2024-04-26T23:41:27.911] [INFO] default - Body: {"query":"{\r\n  characters(status: \"Alive\", species: \"Human\", gender: \"Female\", name: \"Pato\", origin: \"1\") {\r\n    id\r\n    name\r\n    status\r\n    species\r\n    gender\r\n    origin {\r\n        name\r\n    }\r\n  }\r\n}"}
+[2024-04-26T23:46:52.037] [INFO] default - [2024-04-27T04:46:52.037Z] GET /api-docs/
+[2024-04-26T23:46:52.038] [INFO] default - Body: {}
+[2024-04-26T23:46:52.088] [INFO] default - [2024-04-27T04:46:52.087Z] GET /api-docs/swagger-ui.css
+[2024-04-26T23:46:52.088] [INFO] default - Body: {}
+[2024-04-26T23:46:52.094] [INFO] default - [2024-04-27T04:46:52.094Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-26T23:46:52.095] [INFO] default - Body: {}
+[2024-04-26T23:46:52.095] [INFO] default - [2024-04-27T04:46:52.095Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-26T23:46:52.096] [INFO] default - Body: {}
+[2024-04-26T23:46:52.101] [INFO] default - [2024-04-27T04:46:52.101Z] GET /api-docs/swagger-ui-init.js
+[2024-04-26T23:46:52.102] [INFO] default - Body: {}
+[2024-04-26T23:46:52.442] [INFO] default - [2024-04-27T04:46:52.442Z] GET /api-docs/favicon-32x32.png
+[2024-04-26T23:46:52.443] [INFO] default - Body: {}
+[2024-04-26T23:47:43.842] [INFO] default - [2024-04-27T04:47:43.842Z] POST /character
+[2024-04-26T23:47:43.842] [INFO] default - Body: {"name":"Yova","status":"Alive","species":"Human","gender":"Male","origin":1,"location":3,"image":null,"episode":1,"url":"https://rickandmortyapi.com/api/character/avatar/2.jpeg","created":"2017-11-04T18:48:46.250Z"}
+[2024-04-26T23:47:43.880] [INFO] default - Character add to DB
+[2024-04-26T23:48:46.289] [INFO] default - [2024-04-27T04:48:46.289Z] PUT /character/22
+[2024-04-26T23:48:46.290] [INFO] default - Body: {"name":"Yovany","status":"Alive","species":"Human","gender":"Male","origin":1,"location":3,"image":null,"episode":1,"url":"https://rickandmortyapi.com/api/character/avatar/2.jpeg","created":"2017-11-04T18:48:46.250Z"}
+[2024-04-26T23:48:46.310] [INFO] default - Character upate in DB
+[2024-04-26T23:51:37.241] [INFO] default - [2024-04-27T04:51:37.240Z] GET /api-docs/
+[2024-04-26T23:51:37.246] [INFO] default - Body: {}
+[2024-04-26T23:51:37.299] [INFO] default - [2024-04-27T04:51:37.299Z] GET /api-docs/swagger-ui.css
+[2024-04-26T23:51:37.314] [INFO] default - Body: {}
+[2024-04-26T23:51:37.318] [INFO] default - [2024-04-27T04:51:37.318Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-26T23:51:37.319] [INFO] default - Body: {}
+[2024-04-26T23:51:37.322] [INFO] default - [2024-04-27T04:51:37.322Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-26T23:51:37.322] [INFO] default - Body: {}
+[2024-04-26T23:51:37.323] [INFO] default - [2024-04-27T04:51:37.323Z] GET /api-docs/swagger-ui-init.js
+[2024-04-26T23:51:37.324] [INFO] default - Body: {}
+[2024-04-26T23:51:37.748] [INFO] default - [2024-04-27T04:51:37.748Z] GET /api-docs/favicon-32x32.png
+[2024-04-26T23:51:37.748] [INFO] default - Body: {}
+[2024-04-26T23:54:51.353] [INFO] default - [2024-04-27T04:54:51.353Z] GET /api-docs/
+[2024-04-26T23:54:51.358] [INFO] default - Body: {}
+[2024-04-26T23:54:51.413] [INFO] default - [2024-04-27T04:54:51.413Z] GET /api-docs/swagger-ui.css
+[2024-04-26T23:54:51.415] [INFO] default - Body: {}
+[2024-04-26T23:54:51.416] [INFO] default - [2024-04-27T04:54:51.416Z] GET /api-docs/swagger-ui-bundle.js
+[2024-04-26T23:54:51.417] [INFO] default - Body: {}
+[2024-04-26T23:54:51.418] [INFO] default - [2024-04-27T04:54:51.418Z] GET /api-docs/swagger-ui-standalone-preset.js
+[2024-04-26T23:54:51.418] [INFO] default - Body: {}
+[2024-04-26T23:54:51.419] [INFO] default - [2024-04-27T04:54:51.419Z] GET /api-docs/swagger-ui-init.js
+[2024-04-26T23:54:51.419] [INFO] default - Body: {}
+[2024-04-26T23:54:51.698] [INFO] default - [2024-04-27T04:54:51.697Z] GET /api-docs/favicon-32x32.png
+[2024-04-26T23:54:51.698] [INFO] default - Body: {}
+[2024-04-26T23:56:03.059] [INFO] default - [2024-04-27T04:56:03.059Z] POST /graphql
+[2024-04-26T23:56:03.060] [INFO] default - Body: {"query":"{\r\n  characters(status: \"Alive\", species: \"Alien\", gender: \"Female\", name: \"Arthricia\", origin: \"9\") {\r\n    id\r\n    name\r\n    status\r\n    species\r\n    gender\r\n    image\r\n    url\r\n  }\r\n}"}
